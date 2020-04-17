@@ -11,6 +11,7 @@ const Header = () => {
     justify-content: flex-end;
     width: 100%;
     height: 50vh;
+    border-bottom: 1px solid #eaeaea !important;
   `;
   return (
     <Header>

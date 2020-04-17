@@ -7,7 +7,7 @@ const Footer = () => {
 
     width: 100%;
     bottom: 0;
-    height: 70px;
+    height: 60px;
     background-color: #fafafa;
   `;
   return (
