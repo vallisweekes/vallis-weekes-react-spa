@@ -4,7 +4,6 @@ import styled from 'styled-components';
 const Footer = () => {
   const FooterWrapper = styled.footer`
     position: fixed;
-
     width: 100%;
     bottom: 0;
     height: 60px;

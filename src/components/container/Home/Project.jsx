@@ -1,19 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Card, CardContainer } from '../../../utils/styles';
 
 const Project = (props) => {
-  const CardContainer = styled.section`
-    position: relative;
-    height: unset;
-    background-color: rgb(250, 250, 250);
-  `;
-
-  const Card = styled.div`
-    width: 400px;
-    max-width: 400px;
-    height: 240px;
-    margin-bottom: 1rem;
-  `;
   const ImageHolder = styled.div`
     height: 100%;
     width: 100%;
@@ -29,11 +18,6 @@ const Project = (props) => {
     cursor: zoom-in;
   `;
 
-  // const CardDetails = styled.div`
-  //   padding: 0.5rem;
-  //   height: 70px;
-  //   background-color: white;
-  // `;
   return (
     <CardContainer>
       <Card>
