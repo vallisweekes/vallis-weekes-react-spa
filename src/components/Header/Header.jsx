@@ -5,10 +5,12 @@ import { HeaderWrapper } from '../../utils/styles';
 
 const Header = () => {
   return (
-    <HeaderWrapper>
-      <TopBar />
-      <Intro />
-    </HeaderWrapper>
+    <section className="h-content">
+      <HeaderWrapper>
+        <TopBar />
+        <Intro />
+      </HeaderWrapper>
+    </section>
   );
 };
 

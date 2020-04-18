@@ -14,16 +14,18 @@ const Projects = () => {
   `;
 
   return (
-    <ProjectsContainer>
-      <ProjectHeading>
-        <h2>Projects</h2>
-      </ProjectHeading>
-      <ProjectsWrapper>
-        {results.map((p) => (
-          <Project key={p._id} image={p.image} />
-        ))}
-      </ProjectsWrapper>
-    </ProjectsContainer>
+    <section>
+      <ProjectsContainer>
+        <ProjectHeading>
+          <h2>Projects</h2>
+        </ProjectHeading>
+        <ProjectsWrapper>
+          {results.map((p) => (
+            <Project key={p._id} image={p.image} />
+          ))}
+        </ProjectsWrapper>
+      </ProjectsContainer>
+    </section>
   );
 };
 

@@ -1,11 +1,11 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 export const HeaderWrapper = styled.header`
   display: flex;
   width: 100px;
   flex-direction: column;
   justify-content: flex-end;
   width: 100%;
-  height: 50vh;
+  height: 60vh;
   border-bottom: 2px solid rgb(234, 234, 234);
 `;
 
@@ -29,12 +29,6 @@ export const StackHolder = styled.div`
   height: 50px;
   border-radius: 50px;
   background-color: #fafafa;
-`;
-
-export const IntroText = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 300px;
 `;
 
 export const ProjectsContainer = styled.section`
@@ -69,4 +63,26 @@ export const Card = styled.div`
   height: 240px;
   margin-right: 4rem;
   margin-bottom: 4rem;
+`;
+
+const fadeInDown = keyframes`
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+`;
+
+export const IntroText = styled.div`
+  display: flex;
+  flex-direction: column;
+  animation: ${fadeInDown};
+  width: 400px;
 `;
