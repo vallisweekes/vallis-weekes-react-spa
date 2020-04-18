@@ -1,19 +1,15 @@
 import React from 'react';
-import Mobile from './Mobile';
+// import Mobile from './Mobile';
 import styled from 'styled-components';
 const Footer = () => {
   const FooterWrapper = styled.footer`
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
-    bottom: 0;
+    /* bottom: 0; */
     height: 60px;
     background-color: #fafafa;
   `;
-  return (
-    <FooterWrapper>
-      <Mobile />
-    </FooterWrapper>
-  );
+  return <FooterWrapper></FooterWrapper>;
 };
 
 export default Footer;

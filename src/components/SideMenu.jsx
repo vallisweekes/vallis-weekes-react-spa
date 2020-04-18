@@ -1,21 +1,31 @@
 import React from 'react';
-import { slide as Menu } from 'react-burger-menu';
 
-export default (props) => {
+import { Link } from 'react-router-dom';
+import { SideBarContainer, LinkItems, CloseButton } from '../utils/styles';
+
+const SideBar = ({ closeSideBar }) => {
   return (
-    // Pass on our props
-    <Menu {...props}>
-      <a className="menu-item" href="/">
-        Home
-      </a>
-
-      <a className="menu-item" href="/about">
-        Burgers
-      </a>
-
-      <a className="menu-item" href="/contact">
-        Pizzas
-      </a>
-    </Menu>
+    <SideBarContainer>
+      <LinkItems>
+        <CloseButton onClick={closeSideBar}>&times;</CloseButton>
+        <li>
+          <Link to="/" style={{ color: '#ffffff' }}>
+            Home
+          </Link>
+        </li>
+        <li>
+          <Link to="/about" style={{ color: '#ffffff' }}>
+            About
+          </Link>
+        </li>
+        <li>
+          <Link to={'/contact'} style={{ color: '#ffffff' }}>
+            Contact
+          </Link>
+        </li>
+      </LinkItems>
+    </SideBarContainer>
   );
 };
+
+export default SideBar;

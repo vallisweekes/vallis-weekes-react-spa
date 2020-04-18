@@ -11,6 +11,9 @@ const images = [
   'https://portfolio-vw.s3.eu-west-2.amazonaws.com/Icons/javascript.png',
   'https://portfolio-vw.s3.eu-west-2.amazonaws.com/Icons/node.png',
   'https://portfolio-vw.s3.eu-west-2.amazonaws.com/Icons/react.png',
+  'https://portfolio-vw.s3.eu-west-2.amazonaws.com/Icons/nextjs.png',
+  'https://portfolio-vw.s3.eu-west-2.amazonaws.com/Icons/css.png',
+  'https://portfolio-vw.s3.eu-west-2.amazonaws.com/Icons/html.png',
 ];
 const Stacks = () => {
   return (

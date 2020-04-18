@@ -11,6 +11,7 @@ const NavBar = () => {
     margin-right: 2rem;
     font-family: 'Nunito', sans-serif;
   `;
+
   return (
     <Nav>
       <li>

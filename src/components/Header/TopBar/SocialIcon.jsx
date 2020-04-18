@@ -3,26 +3,10 @@ import TwitterIcon from '@material-ui/icons/Twitter';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
-
-import styled from 'styled-components';
+import { SocialIconWrapper, IconHolder } from '../../../utils/styles';
 const SocialIcon = () => {
-  const SocialIcon = styled.div`
-    display: flex;
-    justify-content: flex-end;
-  `;
-  const IconHolder = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #000000;
-    border-radius: 50px;
-    margin-right: 0.75rem;
-    cursor: pointer;
-  `;
   return (
-    <SocialIcon>
+    <SocialIconWrapper>
       <IconHolder>
         <TwitterIcon style={{ fontSize: 20 }} />
       </IconHolder>
@@ -35,7 +19,7 @@ const SocialIcon = () => {
       <IconHolder>
         <LinkedInIcon style={{ fontSize: 20 }} />
       </IconHolder>
-    </SocialIcon>
+    </SocialIconWrapper>
   );
 };
 

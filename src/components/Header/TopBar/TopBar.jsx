@@ -1,19 +1,30 @@
-import React from 'react';
-import NavBar from './NavBar';
+import React, { useState } from 'react';
+
+// import NavBar from './NavBar';
+import SideMenu from '../../SideMenu';
 import SocialIcon from './SocialIcon';
-import styled from 'styled-components';
+import MenuIcon from '@material-ui/icons/Menu';
+import { TopBarContainer, BurgerMenu } from '../../../utils/styles';
+
 const TopBar = () => {
-  const TopBar = styled.div`
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin: 1rem 1rem 0 0;
-  `;
+  const [sideBar, setSideBar] = useState(false);
+  const handleSideBarOpen = () => {
+    setSideBar(true);
+  };
+
+  const handleSideBarClose = () => {
+    console.log('Click close');
+    setSideBar(false);
+  };
   return (
-    <TopBar>
-      <NavBar />
+    <TopBarContainer>
+      <BurgerMenu onClick={handleSideBarOpen}>
+        <MenuIcon />
+        {sideBar ? <SideMenu closeSideBar={handleSideBarClose} /> : null}
+      </BurgerMenu>
+      {/*<NavBar />*/}
       <SocialIcon />
-    </TopBar>
+    </TopBarContainer>
   );
 };
 

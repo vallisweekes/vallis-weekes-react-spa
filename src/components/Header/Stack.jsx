@@ -4,7 +4,7 @@ const Stack = ({ image }) => {
   return (
     <section>
       <StackHolder>
-        <img src={image} alt="" style={{ width: 30, height: 30 }} />
+        <img src={image} alt="" style={{ width: 20, height: 20 }} />
       </StackHolder>
     </section>
   );
