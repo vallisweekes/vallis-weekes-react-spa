@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@100&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -8,6 +9,7 @@ body {
     margin: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 ul {
@@ -15,5 +17,10 @@ ul {
 }
 
 a {
+    color: #000000;
     text-decoration: none;
+}
+
+[text="text"] {
+    padding: 5px;
 }

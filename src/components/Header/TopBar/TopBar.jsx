@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import Logo from './Logo';
 // import NavBar from './NavBar';
 import SideMenu from '../../SideMenu';
 import SocialIcon from './SocialIcon';
@@ -22,6 +22,7 @@ const TopBar = () => {
         <MenuIcon />
         {sideBar ? <SideMenu closeSideBar={handleSideBarClose} /> : null}
       </BurgerMenu>
+      <Logo />
       {/*<NavBar />*/}
       <SocialIcon />
     </TopBarContainer>

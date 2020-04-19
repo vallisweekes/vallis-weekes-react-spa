@@ -13,6 +13,7 @@
     "@testing-library/user-event": "^7.1.2",
     "express": "^4.17.1",
     "formik": "^2.1.4",
+    "nodemailer": "^6.4.6",
     "react": "^16.13.1",
     "react-burger-menu": "^2.6.13",
     "react-dom": "^16.13.1",

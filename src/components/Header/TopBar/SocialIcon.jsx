@@ -8,16 +8,40 @@ const SocialIcon = () => {
   return (
     <SocialIconWrapper>
       <IconHolder>
-        <TwitterIcon style={{ fontSize: 20 }} />
+        <a
+          href="https://twitter.com/VallisWeekes"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <TwitterIcon style={{ fontSize: 20 }} />
+        </a>
       </IconHolder>
       <IconHolder>
-        <GitHubIcon style={{ fontSize: 20 }} />
+        <a
+          href="https://github.com/vallisweekes"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <GitHubIcon style={{ fontSize: 20 }} />
+        </a>
       </IconHolder>
       <IconHolder>
-        <InstagramIcon style={{ fontSize: 20 }} />
+        <a
+          href="https://www.instagram.com/vallis.weekes"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <InstagramIcon style={{ fontSize: 20 }} />
+        </a>
       </IconHolder>
       <IconHolder>
-        <LinkedInIcon style={{ fontSize: 20 }} />
+        <a
+          href="https://www.linkedin.com/in/vallisweekes"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <LinkedInIcon style={{ fontSize: 20 }} />
+        </a>
       </IconHolder>
     </SocialIconWrapper>
   );

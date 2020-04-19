@@ -10,7 +10,7 @@ export const HeaderWrapper = styled.header`
   border-bottom: 2px solid rgb(234, 234, 234);
 
   @media only screen and (min-width: 600px) {
-    height: 60vh;
+    height: 70vh;
   }
 `;
 
@@ -25,7 +25,7 @@ export const TopBarContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 1rem 1rem 0 0;
+  margin: 1rem 0 0 0;
 `;
 
 export const BurgerMenu = styled.div`
@@ -53,6 +53,37 @@ export const IntroWrapper = styled.div`
   justify-content: center;
   font-family: 'Source Sans Pro', sans-serif;
   text-align: center;
+`;
+
+const fadeInDown = keyframes`
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+`;
+
+// Intro Text
+export const IntroText = styled.div`
+  display: flex;
+  flex-direction: column;
+  animation: ${fadeInDown};
+  width: 400px;
+`;
+
+export const HeaderIntro = styled.h1`
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
+
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 3;
+  font-size: 48px;
 `;
 
 export const StackHolder = styled.div`
@@ -97,28 +128,6 @@ export const Card = styled.div`
   height: 240px;
 
   margin-bottom: 4rem;
-`;
-
-const fadeInDown = keyframes`
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-
-`;
-
-export const IntroText = styled.div`
-  display: flex;
-  flex-direction: column;
-  animation: ${fadeInDown};
-  width: 400px;
 `;
 
 export const SideBar = styled.div``;
@@ -210,4 +219,66 @@ export const AboutWrapper = styled.div`
   background-image: url('https://portfolio-vw.s3.eu-west-2.amazonaws.com/about-me.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
+`;
+
+//Form
+export const ContactContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+`;
+export const StyleForm = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const ContactFormHeading = styled.div`
+  padding: 3rem;
+`;
+export const Input = styled.input`
+  height: 40px;
+  width: 100%;
+  ::placeholder {
+    padding: 5px;
+  }
+`;
+// const NameField = styled.div`
+//   display: flex;
+// `;
+
+export const Label = styled.label`
+  display: inline-block;
+  padding-bottom: 5px;
+`;
+
+export const TextAreaWrapper = styled.div`
+  height: 200px;
+  margin-top: 10px;
+`;
+
+export const Textarea = styled.textarea`
+  width: 100%;
+  height: 100%;
+  resize: none;
+`;
+
+export const Button = styled.div`
+  display: flex;
+  justify-content: flex-end;
+`;
+
+export const Btn = styled.button`
+  margin-top: 5px;
+  height: 40px;
+  width: 100px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+`;
+
+export const SendBtn = styled(Btn)`
+  background-color: black;
+  color: white;
 `;

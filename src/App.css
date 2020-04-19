@@ -3,6 +3,12 @@
 }
 
 .c-content {
-    -webkit-box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 15px 0px, rgba(0, 0, 0, 0.02) 0px 0px 0px 1px;
-    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 15px 0px, rgba(0, 0, 0, 0.02) 0px 0px 0px 1px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 20px 0px, rgba(0, 0, 0, 0.02) 0px 0px 0px 1px;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 20px 0px, rgba(0, 0, 0, 0.02) 0px 0px 0px 1px;
+    border-radius: 20px;
+}
+
+.required {
+    color: #f00808;
+    font-size: 1.1rem;
 }

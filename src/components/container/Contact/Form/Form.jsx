@@ -1,44 +1,60 @@
 import React from 'react';
-import styled from 'styled-components';
+import {
+  ContactContainer,
+  StyleForm,
+  ContactFormHeading,
+  Input,
+  Label,
+  TextAreaWrapper,
+  Textarea,
+  SendBtn,
+  Button,
+} from '../../../../utils/styles';
 
-const ContactContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 80%;
-  margin: 0 auto;
-`;
-const StyleForm = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
-
-const ContactFormHeading = styled.div`
-  padding: 3rem;
-`;
 const ContactForm = () => (
-  <ContactContainer>
-    <ContactFormHeading>
-      <h1>Get In Touch</h1>
-    </ContactFormHeading>
+  <section>
+    <ContactContainer>
+      <ContactFormHeading>
+        <h1>Get In Touch</h1>
+      </ContactFormHeading>
+      <form
+        action="/"
+        method="POST"
+        style={{ width: '400px', marginBottom: 20 }}
+      >
+        <StyleForm>
+          <div>
+            <Label>
+              First Name<span className="required"> *</span>
+            </Label>
+            <Input type="text" name="firstname" placeholder="First Name" />
+          </div>
+          <div>
+            <Label>
+              Last Name<span className="required"> *</span>
+            </Label>
+            <Input type="text" name="lastname" placeholder="Last Name" />
+          </div>
 
-    <form action="/" method="POST">
-      <StyleForm>
-        <div>
-          <label>Name</label>
-          <input />
-        </div>
-        <div>
-          <label>Email</label>
-          <input />
-        </div>
-        <div>
-          <label>Message</label>
-          <textarea />
-        </div>
-      </StyleForm>
-    </form>
-  </ContactContainer>
+          <div>
+            <Label>
+              Email<span className="required"> *</span>
+            </Label>
+            <Input type="email" name="email" placeholder="Email" />
+          </div>
+          <div>
+            <Label>Message</Label>
+          </div>
+          <TextAreaWrapper>
+            <Textarea placeholder="Message" name="message" />
+          </TextAreaWrapper>
+        </StyleForm>
+        <Button>
+          <SendBtn type="submit">SEND</SendBtn>
+        </Button>
+      </form>
+    </ContactContainer>
+  </section>
 );
 
 export default ContactForm;

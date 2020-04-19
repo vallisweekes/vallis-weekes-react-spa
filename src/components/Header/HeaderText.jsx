@@ -1,20 +1,21 @@
 import React from 'react';
-import { IntroText } from '../../../src/utils/styles';
+import { IntroText, HeaderIntro } from '../../../src/utils/styles';
 const HeaderText = () => {
   return (
     <IntroText>
-      <h1 style={{ wordSpacing: 1, letterSpacing: 1, fontSize: 60 }}>
-        VALLIS WEEKES
-      </h1>
+      <HeaderIntro>
+        <h1>MOTIVATED</h1>
+      </HeaderIntro>
       <div
         style={{
-          fontSize: 30,
+          fontSize: 25,
           padding: 2,
           marginTop: 10,
-          border: '1px solid #000000',
+          color: '#828282',
+          border: '1px solid #828282',
         }}
       >
-        <h2 className="fadeInDown">Full-Stack Developer</h2>
+        <h2 className="fadeInDown">FULL-STACK DEVELOPER</h2>
       </div>
     </IntroText>
   );

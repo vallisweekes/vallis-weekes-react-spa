@@ -3,7 +3,8 @@ import React from 'react';
 const About = () => {
   return (
     <div>
-      <h1>ABout me</h1>
+      <h1>About me</h1>
+      <p>I am a motivated </p>
     </div>
   );
 };
