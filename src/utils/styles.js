@@ -23,14 +23,23 @@ export const Nav = styled.ul`
   font-family: 'Nunito', sans-serif;
 `;
 
+export const FooterContentWrapper = styled.div`
+  margin-left: 20px;
+  font-size: 12px;
+
+  @media only screen and (min-width: 600px) {
+    font-size: 16px;
+  }
+`;
+
 export const FooterMenu = styled.ul`
   @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   width: 200px;
   margin-right: 2rem;
   font-family: 'Nunito', sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   @media only screen and (min-width: 600px) {
     font-size: 1rem;
   }
@@ -105,7 +114,25 @@ export const HeaderIntro = styled.h1`
 
   font-family: 'Raleway', sans-serif;
   letter-spacing: 3;
-  font-size: 48px;
+  font-size: 35px;
+  @media only screen and (min-width: 600px) {
+    font-size: 48px;
+  }
+`;
+
+export const SubTextWrapper = styled.div`
+  /* display: inline-block; */
+  width: 300px;
+  margin: 0 auto;
+  font-size: 18px;
+  padding: 2px;
+  margin-top: 10px;
+  color: #828282;
+  border: 1px solid #828282;
+
+  @media only screen and (min-width: 600px) {
+    font-size: 48px;
+  }
 `;
 
 export const StackHolder = styled.div`

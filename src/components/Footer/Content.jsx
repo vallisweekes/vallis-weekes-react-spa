@@ -1,13 +1,13 @@
 import React from 'react';
-
+import { FooterContentWrapper } from '../../utils/styles';
 const Content = () => {
   return (
-    <div style={{ marginLeft: '20px' }}>
+    <FooterContentWrapper>
       <p>
         Copyright &copy; {new Date().getFullYear()} Vallis Weekes All rights
         reserved
       </p>
-    </div>
+    </FooterContentWrapper>
   );
 };
 
