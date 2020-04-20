@@ -39,7 +39,7 @@ export const FooterMenu = styled.ul`
   width: 200px;
   margin-right: 2rem;
   font-family: 'Nunito', sans-serif;
-  font-size: 0.6rem;
+  font-size: 8px;
   @media only screen and (min-width: 600px) {
     font-size: 1rem;
   }
