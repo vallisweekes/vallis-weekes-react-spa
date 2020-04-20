@@ -1,12 +1,17 @@
 import React from 'react';
-import { AboutPageWrapper, AboutPageInner } from '../../../utils/styles';
+import Intro from './Intro';
+import Expirience from './Expirience';
+import Skills from './Skills';
+import Education from './Education';
+import { AboutPageWrapper } from '../../../utils/styles';
+
 const About = () => {
   return (
     <AboutPageWrapper>
-      <AboutPageInner>
-        <h1>About me</h1>
-        <p>I am a motivated </p>
-      </AboutPageInner>
+      <Intro />
+      <Expirience />
+      <Skills />
+      <Education />
     </AboutPageWrapper>
   );
 };

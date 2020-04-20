@@ -31,8 +31,8 @@ const TopBar = () => {
 
       <BurgerMenu onClick={handleSideBarOpen}>
         <MenuIcon />
-        {sideBar ? <SideMenu showSideBar={sideBar} /> : null}
       </BurgerMenu>
+      {sideBar ? <SideMenu showSideBar={sideBar} /> : null}
       <Logo />
       {/*<NavBar />*/}
       <SocialIcon />

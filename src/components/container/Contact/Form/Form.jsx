@@ -20,7 +20,7 @@ const ContactForm = () => (
       <form
         action=""
         method="POST"
-        style={{ width: '400px', marginBottom: 20 }}
+        style={{ width: '400px', marginBottom: 80 }}
       >
         <StyleForm>
           <div>
@@ -50,7 +50,9 @@ const ContactForm = () => (
           </TextAreaWrapper>
         </StyleForm>
         <Button>
-          <SendBtn type="submit">SEND</SendBtn>
+          <SendBtn type="submit" disabled>
+            SEND
+          </SendBtn>
         </Button>
       </form>
     </ContactContainer>

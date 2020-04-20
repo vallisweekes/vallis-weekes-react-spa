@@ -6,6 +6,7 @@
 }
 
 body {
+    position: relative;
     margin: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -23,4 +24,8 @@ a {
 
 [text="text"] {
     padding: 5px;
+}
+
+p {
+    margin-top: 10px;
 }

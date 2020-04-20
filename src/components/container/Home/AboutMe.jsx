@@ -16,7 +16,10 @@ const AboutMe = () => {
             <h3 style={{ fontSize: 25 }}>A little about me</h3>
           </div>
           <div style={{ marginBottom: 10 }}>
-            <p>I am exxkll</p>
+            <p>
+              I describe my self as developer who loves coding and aspires to be
+              an expert in the field.
+            </p>
           </div>
           <Link to={'/about'}>
             <AboutMeBtn>About Me</AboutMeBtn>
