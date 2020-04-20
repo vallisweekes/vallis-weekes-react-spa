@@ -344,7 +344,7 @@ function _templateObject13() {
 }
 
 function _templateObject12() {
-  var data = _taggedTemplateLiteral(["\n  /* display: inline-block; */\n  width: 300px;\n  margin: 0 auto;\n  font-size: 18px;\n  padding: 2px;\n  margin-top: 10px;\n  color: #828282;\n  border: 1px solid #828282;\n\n  @media only screen and (min-width: 600px) {\n    font-size: 48px;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  /* display: inline-block; */\n  width: 300px;\n  margin: 0 auto;\n  font-size: 16px;\n  padding: 2px;\n  margin-top: 10px;\n  color: #828282;\n  border: 1px solid #828282;\n\n  @media only screen and (min-width: 600px) {\n    font-size: 25px;\n    width: 425px;\n  }\n"]);
 
   _templateObject12 = function _templateObject12() {
     return data;
@@ -354,7 +354,7 @@ function _templateObject12() {
 }
 
 function _templateObject11() {
-  var data = _taggedTemplateLiteral(["\n  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');\n\n  font-family: 'Raleway', sans-serif;\n  letter-spacing: 3;\n  font-size: 35px;\n  @media only screen and (min-width: 600px) {\n    font-size: 48px;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');\n\n  font-family: 'Raleway', sans-serif;\n  letter-spacing: 3;\n  font-size: 35px;\n  @media only screen and (min-width: 600px) {\n    font-size: 50px;\n    letter-spacing: 6;\n  }\n"]);
 
   _templateObject11 = function _templateObject11() {
     return data;

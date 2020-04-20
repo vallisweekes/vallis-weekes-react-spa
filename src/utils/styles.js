@@ -116,7 +116,8 @@ export const HeaderIntro = styled.h1`
   letter-spacing: 3;
   font-size: 35px;
   @media only screen and (min-width: 600px) {
-    font-size: 48px;
+    font-size: 50px;
+    letter-spacing: 6;
   }
 `;
 
@@ -124,14 +125,15 @@ export const SubTextWrapper = styled.div`
   /* display: inline-block; */
   width: 300px;
   margin: 0 auto;
-  font-size: 18px;
+  font-size: 16px;
   padding: 2px;
   margin-top: 10px;
   color: #828282;
   border: 1px solid #828282;
 
   @media only screen and (min-width: 600px) {
-    font-size: 48px;
+    font-size: 25px;
+    width: 425px;
   }
 `;
 
