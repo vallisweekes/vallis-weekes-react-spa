@@ -4,23 +4,34 @@ import Logo from './Logo';
 import SideMenu from '../../SideMenu';
 import SocialIcon from './SocialIcon';
 import MenuIcon from '@material-ui/icons/Menu';
-import { TopBarContainer, BurgerMenu } from '../../../utils/styles';
+import {
+  TopBarContainer,
+  BurgerMenu,
+  CloseButton,
+} from '../../../utils/styles';
 
 const TopBar = () => {
   const [sideBar, setSideBar] = useState(false);
+  const [showClose, setShowClose] = useState(false);
+
   const handleSideBarOpen = () => {
     setSideBar(true);
+    setShowClose(true);
   };
 
   const handleSideBarClose = () => {
-    console.log('Click close');
     setSideBar(false);
+    setShowClose(false);
   };
   return (
     <TopBarContainer>
+      {showClose ? (
+        <CloseButton onClick={handleSideBarClose}>&times;</CloseButton>
+      ) : null}
+
       <BurgerMenu onClick={handleSideBarOpen}>
         <MenuIcon />
-        {sideBar ? <SideMenu closeSideBar={handleSideBarClose} /> : null}
+        {sideBar ? <SideMenu showSideBar={sideBar} /> : null}
       </BurgerMenu>
       <Logo />
       {/*<NavBar />*/}

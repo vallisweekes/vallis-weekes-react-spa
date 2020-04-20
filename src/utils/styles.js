@@ -14,6 +14,28 @@ export const HeaderWrapper = styled.header`
   }
 `;
 
+export const Nav = styled.ul`
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  margin-right: 2rem;
+  font-family: 'Nunito', sans-serif;
+`;
+
+export const FooterMenu = styled.ul`
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  margin-right: 2rem;
+  font-family: 'Nunito', sans-serif;
+  font-size: 0.8rem;
+  @media only screen and (min-width: 600px) {
+    font-size: 1rem;
+  }
+`;
+
 export const ProjectHeading = styled.section`
   padding: 2rem;
   font-size: 1.5rem;
@@ -37,7 +59,7 @@ export const BurgerMenu = styled.div`
   height: 40px;
   border-radius: 50px;
   margin-left: 10px;
-  transition: all 0.2s ease-in;
+  transition: all 0.2s linear;
 
   :hover {
     background-color: #f3f5f7;
@@ -74,7 +96,7 @@ const fadeInDown = keyframes`
 export const IntroText = styled.div`
   display: flex;
   flex-direction: column;
-  animation: ${fadeInDown};
+  animation: ${fadeInDown} 2s ease-in both;
   width: 400px;
 `;
 
@@ -115,6 +137,19 @@ export const ProjectsWrapper = styled.section`
   }
 `;
 
+export const ProjectDetailWrapper = styled.div`
+  width: 100%;
+`;
+
+export const ProjectDetailInner = styled.div`
+  width: 80%;
+  margin: 0 auto;
+  padding: 2rem;
+`;
+
+export const ProjectDetailHeader = styled.div`
+  margin-bottom: 1rem;
+`;
 export const CardContainer = styled.section`
   position: relative;
   height: unset;
@@ -126,7 +161,6 @@ export const Card = styled.div`
   width: 400px;
   max-width: 400px;
   height: 240px;
-
   margin-bottom: 4rem;
 `;
 
@@ -141,8 +175,24 @@ export const ImageHolder = (props) => {
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 15px;
-
     cursor: zoom-in;
+    transition: all 0.5s;
+
+    :hover {
+      transform: scale(1.1);
+      display: block;
+    }
+
+    ::before {
+      content: '';
+      display: none;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: rgba(52, 73, 94, 0.75);
+    }
   `;
 };
 
@@ -168,23 +218,45 @@ export const IconHolder = styled.div`
   }
 `;
 
+//Slider Open Animation
+
+const slideropen = keyframes`
+from {
+left: -250px
+}
+to {
+  left:0
+}
+`;
+
+const sliderclose = keyframes`
+from {
+left: 0
+}
+to {
+  left: -250px;
+}
+`;
+
 //Sidebar
 
-export const SideBarContainer = styled.div`
-  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
-  height: 100%;
-  width: 250px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  padding-top: 60px;
-  font-family: 'Nunito', sans-serif;
-  color: #ffffff;
-  transition: 1s;
-`;
+export const sideBarControl = (showSideBar) => {
+  return styled.div`
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+    height: 100vh;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -250px;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    font-family: 'Nunito', sans-serif;
+    color: #ffffff;
+    animation: ${showSideBar ? slideropen : sliderclose} 0.5s linear both;
+  `;
+};
 
 export const LinkItems = styled.ul`
   display: flex;
@@ -196,8 +268,9 @@ export const LinkItems = styled.ul`
 
 export const CloseButton = styled.li`
   position: absolute;
-  top: 0;
-  right: 25px;
+  top: 5px;
+  left: 10rem;
+  z-index: 300;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -206,19 +279,62 @@ export const CloseButton = styled.li`
   border-radius: 50px;
   font-size: 25px;
   margin-left: 50px;
+  color: #fff;
+
   :hover {
-    background-color: grey;
+    background-color: rgba(59, 59, 59, 0.7);
+    cursor: pointer;
   }
 `;
 
-//About Me Page
+//Homepage About Me Section
 
 export const AboutWrapper = styled.div`
-  height: 300px;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  height: 400px;
   margin-bottom: 5rem;
-  background-image: url('https://portfolio-vw.s3.eu-west-2.amazonaws.com/about-me.jpeg');
+  padding-top: 2rem;
   background-size: cover;
   background-repeat: no-repeat;
+  @media only screen and (min-width: 768px) {
+    height: 600px;
+  }
+`;
+
+export const AboutMeRight = styled.div`
+  background-image: url('https://portfolio-vw.s3.eu-west-2.amazonaws.com/aboutme.jpg');
+  width: 100%;
+  @media only screen and (min-width: 768px) {
+    width: 55%;
+  }
+`;
+
+export const AboutMeLeft = styled.div`
+  width: 100%;
+
+  @media only screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 3rem;
+    width: 35%;
+  }
+`;
+
+// Homepage about me section end
+
+// About Me Main Page
+
+export const AboutPageWrapper = styled.div`
+  width: 100%;
+`;
+
+export const AboutPageInner = styled.div`
+  width: 80%;
+  margin: 0 auto;
 `;
 
 //Form
@@ -281,4 +397,10 @@ export const Btn = styled.button`
 export const SendBtn = styled(Btn)`
   background-color: black;
   color: white;
+`;
+
+export const AboutMeBtn = styled(Btn)`
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 1rem;
 `;

@@ -18,7 +18,7 @@ const images = [
 const Stacks = () => {
   return (
     <StacksContainer>
-      {images && images.map((n, i) => <Stack image={n} />)}
+      {images && images.map((n, i) => <Stack key={i} image={n} />)}
     </StacksContainer>
   );
 };

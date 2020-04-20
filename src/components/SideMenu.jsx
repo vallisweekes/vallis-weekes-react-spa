@@ -1,13 +1,12 @@
 import React from 'react';
-
 import { Link } from 'react-router-dom';
-import { SideBarContainer, LinkItems, CloseButton } from '../utils/styles';
+import { sideBarControl, LinkItems } from '../utils/styles';
 
-const SideBar = ({ closeSideBar }) => {
+const SideBar = ({ showSideBar }) => {
+  const SideBarController = sideBarControl(showSideBar);
   return (
-    <SideBarContainer>
+    <SideBarController>
       <LinkItems>
-        <CloseButton onClick={closeSideBar}>&times;</CloseButton>
         <li>
           <Link to="/" style={{ color: '#ffffff' }}>
             Home
@@ -24,7 +23,7 @@ const SideBar = ({ closeSideBar }) => {
           </Link>
         </li>
       </LinkItems>
-    </SideBarContainer>
+    </SideBarController>
   );
 };
 

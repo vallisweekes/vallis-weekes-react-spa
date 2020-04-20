@@ -1,5 +1,6 @@
 import React from 'react';
 import Project from './Project';
+import { Link } from 'react-router-dom';
 import { results } from '../../../db/projects.json';
 import {
   ProjectsContainer,
@@ -17,7 +18,9 @@ const Projects = () => {
         <p>View some of my work here</p>
         <ProjectsWrapper>
           {results.map((p) => (
-            <Project key={p._id} image={p.image} />
+            <Link to={`/${p._id}`} key={p._id}>
+              <Project image={p.image} />
+            </Link>
           ))}
         </ProjectsWrapper>
       </ProjectsContainer>
