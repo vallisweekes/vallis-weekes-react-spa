@@ -179,6 +179,14 @@ export const ProjectDetailInner = styled.div`
 export const ProjectDetailHeader = styled.div`
   margin-bottom: 1rem;
 `;
+
+export const ProjectDetailImage = styled.div`
+  width: 100%;
+
+  @media only screen and (min-width: 600px) {
+    width: 500px;
+  }
+`;
 export const CardContainer = styled.section`
   position: relative;
   height: unset;

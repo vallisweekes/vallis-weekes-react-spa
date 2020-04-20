@@ -5,7 +5,7 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.AboutMeBtn = exports.SendBtn = exports.Btn = exports.Button = exports.Textarea = exports.TextAreaWrapper = exports.Label = exports.Input = exports.ContactFormHeading = exports.StyleForm = exports.ContactContainer = exports.AboutPageInner = exports.AboutPageWrapper = exports.AboutMeLeft = exports.AboutMeRight = exports.AboutWrapper = exports.CloseButton = exports.LinkItems = exports.sideBarControl = exports.IconHolder = exports.SocialIconWrapper = exports.ImageHolder = exports.SideBar = exports.Card = exports.CardContainer = exports.ProjectDetailHeader = exports.ProjectDetailInner = exports.ProjectDetailWrapper = exports.ProjectsWrapper = exports.ProjectsContainer = exports.StackHolder = exports.SubTextWrapper = exports.HeaderIntro = exports.IntroText = exports.IntroWrapper = exports.BurgerMenu = exports.TopBarContainer = exports.ProjectHeading = exports.FooterMenu = exports.FooterContentWrapper = exports.Nav = exports.HeaderWrapper = void 0;
+exports.AboutMeBtn = exports.SendBtn = exports.Btn = exports.Button = exports.Textarea = exports.TextAreaWrapper = exports.Label = exports.Input = exports.ContactFormHeading = exports.StyleForm = exports.ContactContainer = exports.AboutPageInner = exports.AboutPageWrapper = exports.AboutMeLeft = exports.AboutMeRight = exports.AboutWrapper = exports.CloseButton = exports.LinkItems = exports.sideBarControl = exports.IconHolder = exports.SocialIconWrapper = exports.ImageHolder = exports.SideBar = exports.Card = exports.CardContainer = exports.ProjectDetailImage = exports.ProjectDetailHeader = exports.ProjectDetailInner = exports.ProjectDetailWrapper = exports.ProjectsWrapper = exports.ProjectsContainer = exports.StackHolder = exports.SubTextWrapper = exports.HeaderIntro = exports.IntroText = exports.IntroWrapper = exports.BurgerMenu = exports.TopBarContainer = exports.ProjectHeading = exports.FooterMenu = exports.FooterContentWrapper = exports.Nav = exports.HeaderWrapper = void 0;
 
 var _styledComponents = _interopRequireWildcard(require("styled-components"));
 
@@ -13,8 +13,18 @@ function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return 
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
-function _templateObject45() {
+function _templateObject46() {
   var data = _taggedTemplateLiteral(["\n  background-color: #000000;\n  color: #ffffff;\n  font-size: 1rem;\n"]);
+
+  _templateObject46 = function _templateObject46() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject45() {
+  var data = _taggedTemplateLiteral(["\n  background-color: black;\n  color: white;\n"]);
 
   _templateObject45 = function _templateObject45() {
     return data;
@@ -24,7 +34,7 @@ function _templateObject45() {
 }
 
 function _templateObject44() {
-  var data = _taggedTemplateLiteral(["\n  background-color: black;\n  color: white;\n"]);
+  var data = _taggedTemplateLiteral(["\n  margin-top: 5px;\n  height: 40px;\n  width: 100px;\n  outline: none;\n  border: none;\n  cursor: pointer;\n"]);
 
   _templateObject44 = function _templateObject44() {
     return data;
@@ -34,7 +44,7 @@ function _templateObject44() {
 }
 
 function _templateObject43() {
-  var data = _taggedTemplateLiteral(["\n  margin-top: 5px;\n  height: 40px;\n  width: 100px;\n  outline: none;\n  border: none;\n  cursor: pointer;\n"]);
+  var data = _taggedTemplateLiteral(["\n  display: flex;\n  justify-content: flex-end;\n"]);
 
   _templateObject43 = function _templateObject43() {
     return data;
@@ -44,7 +54,7 @@ function _templateObject43() {
 }
 
 function _templateObject42() {
-  var data = _taggedTemplateLiteral(["\n  display: flex;\n  justify-content: flex-end;\n"]);
+  var data = _taggedTemplateLiteral(["\n  width: 100%;\n  height: 100%;\n  resize: none;\n"]);
 
   _templateObject42 = function _templateObject42() {
     return data;
@@ -54,7 +64,7 @@ function _templateObject42() {
 }
 
 function _templateObject41() {
-  var data = _taggedTemplateLiteral(["\n  width: 100%;\n  height: 100%;\n  resize: none;\n"]);
+  var data = _taggedTemplateLiteral(["\n  height: 200px;\n  margin-top: 10px;\n"]);
 
   _templateObject41 = function _templateObject41() {
     return data;
@@ -64,7 +74,7 @@ function _templateObject41() {
 }
 
 function _templateObject40() {
-  var data = _taggedTemplateLiteral(["\n  height: 200px;\n  margin-top: 10px;\n"]);
+  var data = _taggedTemplateLiteral(["\n  display: inline-block;\n  padding-bottom: 5px;\n"]);
 
   _templateObject40 = function _templateObject40() {
     return data;
@@ -74,7 +84,7 @@ function _templateObject40() {
 }
 
 function _templateObject39() {
-  var data = _taggedTemplateLiteral(["\n  display: inline-block;\n  padding-bottom: 5px;\n"]);
+  var data = _taggedTemplateLiteral(["\n  height: 40px;\n  width: 100%;\n  ::placeholder {\n    padding: 5px;\n  }\n"]);
 
   _templateObject39 = function _templateObject39() {
     return data;
@@ -84,7 +94,7 @@ function _templateObject39() {
 }
 
 function _templateObject38() {
-  var data = _taggedTemplateLiteral(["\n  height: 40px;\n  width: 100%;\n  ::placeholder {\n    padding: 5px;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  padding: 3rem;\n"]);
 
   _templateObject38 = function _templateObject38() {
     return data;
@@ -94,7 +104,7 @@ function _templateObject38() {
 }
 
 function _templateObject37() {
-  var data = _taggedTemplateLiteral(["\n  padding: 3rem;\n"]);
+  var data = _taggedTemplateLiteral(["\n  display: flex;\n  flex-direction: column;\n"]);
 
   _templateObject37 = function _templateObject37() {
     return data;
@@ -104,7 +114,7 @@ function _templateObject37() {
 }
 
 function _templateObject36() {
-  var data = _taggedTemplateLiteral(["\n  display: flex;\n  flex-direction: column;\n"]);
+  var data = _taggedTemplateLiteral(["\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  width: 80%;\n  margin: 0 auto;\n"]);
 
   _templateObject36 = function _templateObject36() {
     return data;
@@ -114,7 +124,7 @@ function _templateObject36() {
 }
 
 function _templateObject35() {
-  var data = _taggedTemplateLiteral(["\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  width: 80%;\n  margin: 0 auto;\n"]);
+  var data = _taggedTemplateLiteral(["\n  width: 80%;\n  margin: 0 auto;\n"]);
 
   _templateObject35 = function _templateObject35() {
     return data;
@@ -124,7 +134,7 @@ function _templateObject35() {
 }
 
 function _templateObject34() {
-  var data = _taggedTemplateLiteral(["\n  width: 80%;\n  margin: 0 auto;\n"]);
+  var data = _taggedTemplateLiteral(["\n  width: 100%;\n"]);
 
   _templateObject34 = function _templateObject34() {
     return data;
@@ -134,7 +144,7 @@ function _templateObject34() {
 }
 
 function _templateObject33() {
-  var data = _taggedTemplateLiteral(["\n  width: 100%;\n"]);
+  var data = _taggedTemplateLiteral(["\n  width: 100%;\n\n  @media only screen and (min-width: 768px) {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    margin-left: 3rem;\n    width: 35%;\n  }\n"]);
 
   _templateObject33 = function _templateObject33() {
     return data;
@@ -144,7 +154,7 @@ function _templateObject33() {
 }
 
 function _templateObject32() {
-  var data = _taggedTemplateLiteral(["\n  width: 100%;\n\n  @media only screen and (min-width: 768px) {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    margin-left: 3rem;\n    width: 35%;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  background-image: url('https://portfolio-vw.s3.eu-west-2.amazonaws.com/aboutme.jpg');\n  width: 100%;\n  @media only screen and (min-width: 768px) {\n    width: 55%;\n  }\n"]);
 
   _templateObject32 = function _templateObject32() {
     return data;
@@ -154,7 +164,7 @@ function _templateObject32() {
 }
 
 function _templateObject31() {
-  var data = _taggedTemplateLiteral(["\n  background-image: url('https://portfolio-vw.s3.eu-west-2.amazonaws.com/aboutme.jpg');\n  width: 100%;\n  @media only screen and (min-width: 768px) {\n    width: 55%;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  width: 80%;\n  margin: 0 auto;\n  display: flex;\n  flex-wrap: wrap;\n  height: 400px;\n  margin-bottom: 5rem;\n  padding-top: 2rem;\n  background-size: cover;\n  background-repeat: no-repeat;\n  @media only screen and (min-width: 768px) {\n    height: 600px;\n  }\n"]);
 
   _templateObject31 = function _templateObject31() {
     return data;
@@ -164,7 +174,7 @@ function _templateObject31() {
 }
 
 function _templateObject30() {
-  var data = _taggedTemplateLiteral(["\n  width: 80%;\n  margin: 0 auto;\n  display: flex;\n  flex-wrap: wrap;\n  height: 400px;\n  margin-bottom: 5rem;\n  padding-top: 2rem;\n  background-size: cover;\n  background-repeat: no-repeat;\n  @media only screen and (min-width: 768px) {\n    height: 600px;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  position: absolute;\n  top: 5px;\n  left: 10rem;\n  z-index: 300;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  width: 30px;\n  height: 30px;\n  border-radius: 50px;\n  font-size: 25px;\n  margin-left: 50px;\n  color: #fff;\n\n  :hover {\n    background-color: rgba(59, 59, 59, 0.7);\n    cursor: pointer;\n  }\n"]);
 
   _templateObject30 = function _templateObject30() {
     return data;
@@ -174,7 +184,7 @@ function _templateObject30() {
 }
 
 function _templateObject29() {
-  var data = _taggedTemplateLiteral(["\n  position: absolute;\n  top: 5px;\n  left: 10rem;\n  z-index: 300;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  width: 30px;\n  height: 30px;\n  border-radius: 50px;\n  font-size: 25px;\n  margin-left: 50px;\n  color: #fff;\n\n  :hover {\n    background-color: rgba(59, 59, 59, 0.7);\n    cursor: pointer;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  text-decoration: none;\n  font-size: 20px;\n"]);
 
   _templateObject29 = function _templateObject29() {
     return data;
@@ -184,7 +194,7 @@ function _templateObject29() {
 }
 
 function _templateObject28() {
-  var data = _taggedTemplateLiteral(["\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  text-decoration: none;\n  font-size: 20px;\n"]);
+  var data = _taggedTemplateLiteral(["\n    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');\n    height: 100vh;\n    width: 250px;\n    position: fixed;\n    z-index: 1;\n    top: 0;\n    left: -250px;\n    background-color: #111;\n    overflow-x: hidden;\n    padding-top: 60px;\n    font-family: 'Nunito', sans-serif;\n    color: #ffffff;\n    animation: ", " 0.5s linear both;\n  "]);
 
   _templateObject28 = function _templateObject28() {
     return data;
@@ -194,7 +204,7 @@ function _templateObject28() {
 }
 
 function _templateObject27() {
-  var data = _taggedTemplateLiteral(["\n    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');\n    height: 100vh;\n    width: 250px;\n    position: fixed;\n    z-index: 1;\n    top: 0;\n    left: -250px;\n    background-color: #111;\n    overflow-x: hidden;\n    padding-top: 60px;\n    font-family: 'Nunito', sans-serif;\n    color: #ffffff;\n    animation: ", " 0.5s linear both;\n  "]);
+  var data = _taggedTemplateLiteral(["\nfrom {\nleft: 0\n}\nto {\n  left: -250px;\n}\n"]);
 
   _templateObject27 = function _templateObject27() {
     return data;
@@ -204,7 +214,7 @@ function _templateObject27() {
 }
 
 function _templateObject26() {
-  var data = _taggedTemplateLiteral(["\nfrom {\nleft: 0\n}\nto {\n  left: -250px;\n}\n"]);
+  var data = _taggedTemplateLiteral(["\nfrom {\nleft: -250px\n}\nto {\n  left:0\n}\n"]);
 
   _templateObject26 = function _templateObject26() {
     return data;
@@ -214,7 +224,7 @@ function _templateObject26() {
 }
 
 function _templateObject25() {
-  var data = _taggedTemplateLiteral(["\nfrom {\nleft: -250px\n}\nto {\n  left:0\n}\n"]);
+  var data = _taggedTemplateLiteral(["\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  width: 40px;\n  height: 40px;\n  /* border: 1px solid #000000;*/\n  border-radius: 50px;\n\n  margin-right: 0.75rem;\n  transition: all 0.2s ease-in;\n  cursor: pointer;\n\n  :hover {\n    background-color: #f3f5f7;\n  }\n"]);
 
   _templateObject25 = function _templateObject25() {
     return data;
@@ -224,7 +234,7 @@ function _templateObject25() {
 }
 
 function _templateObject24() {
-  var data = _taggedTemplateLiteral(["\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  width: 40px;\n  height: 40px;\n  /* border: 1px solid #000000;*/\n  border-radius: 50px;\n\n  margin-right: 0.75rem;\n  transition: all 0.2s ease-in;\n  cursor: pointer;\n\n  :hover {\n    background-color: #f3f5f7;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  display: flex;\n  justify-content: flex-end;\n"]);
 
   _templateObject24 = function _templateObject24() {
     return data;
@@ -234,7 +244,7 @@ function _templateObject24() {
 }
 
 function _templateObject23() {
-  var data = _taggedTemplateLiteral(["\n  display: flex;\n  justify-content: flex-end;\n"]);
+  var data = _taggedTemplateLiteral(["\n    height: 100%;\n    width: 100%;\n    background-image: url(", ");\n    background-position: center;\n    background-repeat: no-repeat;\n    background-size: cover;\n    border-radius: 15px;\n    cursor: zoom-in;\n    transition: all 0.5s;\n\n    :hover {\n      transform: scale(1.1);\n      display: block;\n    }\n\n    ::before {\n      content: '';\n      display: none;\n      height: 100%;\n      width: 100%;\n      position: absolute;\n      top: 0;\n      left: 0;\n      background-color: rgba(52, 73, 94, 0.75);\n    }\n  "]);
 
   _templateObject23 = function _templateObject23() {
     return data;
@@ -244,7 +254,7 @@ function _templateObject23() {
 }
 
 function _templateObject22() {
-  var data = _taggedTemplateLiteral(["\n    height: 100%;\n    width: 100%;\n    background-image: url(", ");\n    background-position: center;\n    background-repeat: no-repeat;\n    background-size: cover;\n    border-radius: 15px;\n    cursor: zoom-in;\n    transition: all 0.5s;\n\n    :hover {\n      transform: scale(1.1);\n      display: block;\n    }\n\n    ::before {\n      content: '';\n      display: none;\n      height: 100%;\n      width: 100%;\n      position: absolute;\n      top: 0;\n      left: 0;\n      background-color: rgba(52, 73, 94, 0.75);\n    }\n  "]);
+  var data = _taggedTemplateLiteral([""]);
 
   _templateObject22 = function _templateObject22() {
     return data;
@@ -254,7 +264,7 @@ function _templateObject22() {
 }
 
 function _templateObject21() {
-  var data = _taggedTemplateLiteral([""]);
+  var data = _taggedTemplateLiteral(["\n  width: 400px;\n  max-width: 400px;\n  height: 240px;\n  margin-bottom: 4rem;\n"]);
 
   _templateObject21 = function _templateObject21() {
     return data;
@@ -264,7 +274,7 @@ function _templateObject21() {
 }
 
 function _templateObject20() {
-  var data = _taggedTemplateLiteral(["\n  width: 400px;\n  max-width: 400px;\n  height: 240px;\n  margin-bottom: 4rem;\n"]);
+  var data = _taggedTemplateLiteral(["\n  position: relative;\n  height: unset;\n  background-color: rgb(250, 250, 250);\n  margin-top: 30px;\n"]);
 
   _templateObject20 = function _templateObject20() {
     return data;
@@ -274,7 +284,7 @@ function _templateObject20() {
 }
 
 function _templateObject19() {
-  var data = _taggedTemplateLiteral(["\n  position: relative;\n  height: unset;\n  background-color: rgb(250, 250, 250);\n  margin-top: 30px;\n"]);
+  var data = _taggedTemplateLiteral(["\n  width: 100%;\n\n  @media only screen and (min-width: 600px) {\n    width: 500px;\n  }\n"]);
 
   _templateObject19 = function _templateObject19() {
     return data;
@@ -534,112 +544,116 @@ var ProjectDetailHeader = _styledComponents["default"].div(_templateObject18());
 
 exports.ProjectDetailHeader = ProjectDetailHeader;
 
-var CardContainer = _styledComponents["default"].section(_templateObject19());
+var ProjectDetailImage = _styledComponents["default"].div(_templateObject19());
+
+exports.ProjectDetailImage = ProjectDetailImage;
+
+var CardContainer = _styledComponents["default"].section(_templateObject20());
 
 exports.CardContainer = CardContainer;
 
-var Card = _styledComponents["default"].div(_templateObject20());
+var Card = _styledComponents["default"].div(_templateObject21());
 
 exports.Card = Card;
 
-var SideBar = _styledComponents["default"].div(_templateObject21());
+var SideBar = _styledComponents["default"].div(_templateObject22());
 
 exports.SideBar = SideBar;
 
 var ImageHolder = function ImageHolder(props) {
-  return _styledComponents["default"].div(_templateObject22(), props.image);
+  return _styledComponents["default"].div(_templateObject23(), props.image);
 };
 
 exports.ImageHolder = ImageHolder;
 
-var SocialIconWrapper = _styledComponents["default"].div(_templateObject23());
+var SocialIconWrapper = _styledComponents["default"].div(_templateObject24());
 
 exports.SocialIconWrapper = SocialIconWrapper;
 
-var IconHolder = _styledComponents["default"].div(_templateObject24()); //Slider Open Animation
+var IconHolder = _styledComponents["default"].div(_templateObject25()); //Slider Open Animation
 
 
 exports.IconHolder = IconHolder;
-var slideropen = (0, _styledComponents.keyframes)(_templateObject25());
-var sliderclose = (0, _styledComponents.keyframes)(_templateObject26()); //Sidebar
+var slideropen = (0, _styledComponents.keyframes)(_templateObject26());
+var sliderclose = (0, _styledComponents.keyframes)(_templateObject27()); //Sidebar
 
 var sideBarControl = function sideBarControl(showSideBar) {
-  return _styledComponents["default"].div(_templateObject27(), showSideBar ? slideropen : sliderclose);
+  return _styledComponents["default"].div(_templateObject28(), showSideBar ? slideropen : sliderclose);
 };
 
 exports.sideBarControl = sideBarControl;
 
-var LinkItems = _styledComponents["default"].ul(_templateObject28());
+var LinkItems = _styledComponents["default"].ul(_templateObject29());
 
 exports.LinkItems = LinkItems;
 
-var CloseButton = _styledComponents["default"].li(_templateObject29()); //Homepage About Me Section
+var CloseButton = _styledComponents["default"].li(_templateObject30()); //Homepage About Me Section
 
 
 exports.CloseButton = CloseButton;
 
-var AboutWrapper = _styledComponents["default"].div(_templateObject30());
+var AboutWrapper = _styledComponents["default"].div(_templateObject31());
 
 exports.AboutWrapper = AboutWrapper;
 
-var AboutMeRight = _styledComponents["default"].div(_templateObject31());
+var AboutMeRight = _styledComponents["default"].div(_templateObject32());
 
 exports.AboutMeRight = AboutMeRight;
 
-var AboutMeLeft = _styledComponents["default"].div(_templateObject32()); // Homepage about me section end
+var AboutMeLeft = _styledComponents["default"].div(_templateObject33()); // Homepage about me section end
 // About Me Main Page
 
 
 exports.AboutMeLeft = AboutMeLeft;
 
-var AboutPageWrapper = _styledComponents["default"].div(_templateObject33());
+var AboutPageWrapper = _styledComponents["default"].div(_templateObject34());
 
 exports.AboutPageWrapper = AboutPageWrapper;
 
-var AboutPageInner = _styledComponents["default"].div(_templateObject34()); //Form
+var AboutPageInner = _styledComponents["default"].div(_templateObject35()); //Form
 
 
 exports.AboutPageInner = AboutPageInner;
 
-var ContactContainer = _styledComponents["default"].div(_templateObject35());
+var ContactContainer = _styledComponents["default"].div(_templateObject36());
 
 exports.ContactContainer = ContactContainer;
 
-var StyleForm = _styledComponents["default"].div(_templateObject36());
+var StyleForm = _styledComponents["default"].div(_templateObject37());
 
 exports.StyleForm = StyleForm;
 
-var ContactFormHeading = _styledComponents["default"].div(_templateObject37());
+var ContactFormHeading = _styledComponents["default"].div(_templateObject38());
 
 exports.ContactFormHeading = ContactFormHeading;
 
-var Input = _styledComponents["default"].input(_templateObject38()); // const NameField = styled.div`
+var Input = _styledComponents["default"].input(_templateObject39()); // const NameField = styled.div`
 //   display: flex;
 // `;
 
 
 exports.Input = Input;
 
-var Label = _styledComponents["default"].label(_templateObject39());
+var Label = _styledComponents["default"].label(_templateObject40());
 
 exports.Label = Label;
 
-var TextAreaWrapper = _styledComponents["default"].div(_templateObject40());
+var TextAreaWrapper = _styledComponents["default"].div(_templateObject41());
 
 exports.TextAreaWrapper = TextAreaWrapper;
 
-var Textarea = _styledComponents["default"].textarea(_templateObject41());
+var Textarea = _styledComponents["default"].textarea(_templateObject42());
 
 exports.Textarea = Textarea;
 
-var Button = _styledComponents["default"].div(_templateObject42());
+var Button = _styledComponents["default"].div(_templateObject43());
 
 exports.Button = Button;
 
-var Btn = _styledComponents["default"].button(_templateObject43());
+var Btn = _styledComponents["default"].button(_templateObject44());
 
 exports.Btn = Btn;
-var SendBtn = (0, _styledComponents["default"])(Btn)(_templateObject44());
+var SendBtn = (0, _styledComponents["default"])(Btn)(_templateObject45());
 exports.SendBtn = SendBtn;
-var AboutMeBtn = (0, _styledComponents["default"])(Btn)(_templateObject45());
+var AboutMeBtn = (0, _styledComponents["default"])(Btn)(_templateObject46());
 exports.AboutMeBtn = AboutMeBtn;

@@ -4,6 +4,7 @@ import {
   ProjectDetailWrapper,
   ProjectDetailInner,
   ProjectDetailHeader,
+  ProjectDetailImage,
 } from '../../../utils/styles';
 import { results } from '../../../db/projects.json';
 const ProjectDetails = ({ match, history }) => {
@@ -33,9 +34,13 @@ const ProjectDetails = ({ match, history }) => {
         <ProjectDetailHeader>
           <h1>{project.title}</h1>
         </ProjectDetailHeader>
-        <div>
-          <img src={project.image} alt={project.title} />
-        </div>
+        <ProjectDetailImage>
+          <img
+            src={project.image}
+            alt={project.title}
+            style={{ width: '100%' }}
+          />
+        </ProjectDetailImage>
         <div style={{ marginTop: '10px' }}>
           <p>Built With: {project.stack}</p>
         </div>
