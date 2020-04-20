@@ -434,7 +434,7 @@ function _templateObject4() {
 }
 
 function _templateObject3() {
-  var data = _taggedTemplateLiteral(["\n  margin-left: 20px;\n  font-size: 12px;\n\n  @media only screen and (min-width: 600px) {\n    font-size: 16px;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  margin-left: 20px;\n  font-size: 9px;\n\n  @media only screen and (min-width: 600px) {\n    font-size: 16px;\n  }\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;

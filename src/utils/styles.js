@@ -25,7 +25,7 @@ export const Nav = styled.ul`
 
 export const FooterContentWrapper = styled.div`
   margin-left: 20px;
-  font-size: 12px;
+  font-size: 9px;
 
   @media only screen and (min-width: 600px) {
     font-size: 16px;
