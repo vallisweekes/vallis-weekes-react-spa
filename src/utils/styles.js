@@ -25,7 +25,7 @@ export const Nav = styled.ul`
 
 export const FooterContentWrapper = styled.div`
   margin-left: 20px;
-  font-size: 9px;
+  font-size: 8px;
 
   @media only screen and (min-width: 600px) {
     font-size: 16px;
@@ -39,7 +39,7 @@ export const FooterMenu = styled.ul`
   width: 200px;
   margin-right: 2rem;
   font-family: 'Nunito', sans-serif;
-  font-size: 8px;
+  font-size: 7px;
   @media only screen and (min-width: 600px) {
     font-size: 1rem;
   }
