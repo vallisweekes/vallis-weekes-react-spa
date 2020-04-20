@@ -13,7 +13,7 @@ const AboutMe = () => {
         <AboutMeRight />
         <AboutMeLeft>
           <div style={{ marginBottom: 10 }}>
-            <h3 style={{ fontSize: 25 }}>Here's Something</h3>
+            <h3 style={{ fontSize: 25 }}>A little about me</h3>
           </div>
           <div style={{ marginBottom: 10 }}>
             <p>I am exxkll</p>

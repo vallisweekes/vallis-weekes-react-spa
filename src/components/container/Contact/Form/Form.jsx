@@ -18,7 +18,7 @@ const ContactForm = () => (
         <h1>Get In Touch</h1>
       </ContactFormHeading>
       <form
-        action="/"
+        action=""
         method="POST"
         style={{ width: '400px', marginBottom: 20 }}
       >

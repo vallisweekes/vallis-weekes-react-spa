@@ -13,6 +13,11 @@ const SideBar = ({ showSideBar }) => {
           </Link>
         </li>
         <li>
+          <Link to="/projects" style={{ color: '#ffffff' }}>
+            Projects
+          </Link>
+        </li>
+        <li>
           <Link to="/about" style={{ color: '#ffffff' }}>
             About
           </Link>

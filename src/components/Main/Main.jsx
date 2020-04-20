@@ -1,9 +1,11 @@
 import React from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 import Home from '../container/Home/Home';
 import About from '../container/About/About';
 import Contact from '../container/Contact/Contact';
 import ProjectDetails from '../container/Home/ProjectDetails';
+import NotFound from '../container/NotFound/NotFound';
+import Projects from '../container/Home/Projects';
 const Main = () => {
   return (
     <React.Fragment>
@@ -12,8 +14,12 @@ const Main = () => {
           <Switch>
             <Route path="/about" render={() => <About />} />
             <Route path="/contact" component={Contact} />
-            <Route path="/:id" exact component={ProjectDetails} />
-            <Route path="/" render={() => <Home />} />
+
+            <Route path="/projects/:id" exact component={ProjectDetails} />
+            <Route path="/projects" component={Projects} />
+            <Route path="/not-found" component={NotFound} />
+            <Route path="/" exact render={() => <Home />} />
+            <Redirect to="/not-found" />
           </Switch>
         </section>
       </main>

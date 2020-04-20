@@ -18,7 +18,7 @@ const Projects = () => {
         <p>View some of my work here</p>
         <ProjectsWrapper>
           {results.map((p) => (
-            <Link to={`/${p._id}`} key={p._id}>
+            <Link to={`/projects/${p._id}`} key={p._id}>
               <Project image={p.image} />
             </Link>
           ))}

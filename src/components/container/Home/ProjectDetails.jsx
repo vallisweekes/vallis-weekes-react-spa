@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
+import KeyboardBackspaceIcon from '@material-ui/icons/KeyboardBackspace';
 import {
   ProjectDetailWrapper,
   ProjectDetailInner,
   ProjectDetailHeader,
 } from '../../../utils/styles';
 import { results } from '../../../db/projects.json';
-const ProjectDetails = ({ match }) => {
+const ProjectDetails = ({ match, history }) => {
   const [project, setProjects] = useState({});
   useEffect(() => {
     const getProject = () => {
@@ -19,10 +20,15 @@ const ProjectDetails = ({ match }) => {
     getProject();
   }, [match.params.id]);
 
-  console.log(match);
+  const handleBackButton = () => {
+    history.push('/projects');
+  };
 
   return (
     <ProjectDetailWrapper>
+      <div style={{ marginLeft: 30, cursor: 'pointer', paddingTop: 10 }}>
+        <KeyboardBackspaceIcon onClick={handleBackButton} />
+      </div>
       <ProjectDetailInner>
         <ProjectDetailHeader>
           <h1>{project.title}</h1>
