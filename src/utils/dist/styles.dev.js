@@ -5,7 +5,7 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.AboutMeEducation = exports.AboutMeSkills = exports.AboutMeExpirience = exports.AboutMeIntro = exports.AboutMePageRight = exports.AboutMePageLeft = exports.AboutPageInner = exports.AboutPageWrapper = exports.FooterMenu = exports.FooterContentWrapper = exports.FooterContent = exports.FooterWrapper = exports.AboutMeBtn = exports.SendBtn = exports.Btn = exports.Button = exports.Textarea = exports.TextAreaWrapper = exports.Label = exports.Input = exports.ContactFormHeading = exports.StyleForm = exports.ContactContainer = exports.AboutMeLeft = exports.AboutMeRight = exports.AboutWrapper = exports.CloseButton = exports.LinkItem = exports.LinkUl = exports.sideBarControl = exports.IconHolder = exports.SocialIconWrapper = exports.ImageHolder = exports.SideBar = exports.Card = exports.CardContainer = exports.ProjectDetailImage = exports.ProjectDetailHeader = exports.ProjectDetailInner = exports.ProjectDetailWrapper = exports.ProjectsWrapper = exports.ProjectsContainer = exports.StackHolder = exports.SubTextWrapper = exports.HeaderIntro = exports.IntroText = exports.IntroWrapper = exports.BurgerMenu = exports.TopBarContainer = exports.ProjectHeading = exports.Nav = exports.HeaderWrapper = void 0;
+exports.ModalClass = exports.AboutMeEducation = exports.AboutMeSkills = exports.AboutMeExpirience = exports.AboutMeIntro = exports.AboutMePageRight = exports.AboutMePageLeft = exports.AboutPageInner = exports.AboutPageWrapper = exports.FooterMenu = exports.FooterContentWrapper = exports.FooterContent = exports.FooterWrapper = exports.ThankYouBtn = exports.AboutMeBtn = exports.SendBtn = exports.Btn = exports.Button = exports.Textarea = exports.TextAreaWrapper = exports.Label = exports.Input = exports.ContactFormHeading = exports.StyleForm = exports.ContactContainer = exports.AboutMeLeft = exports.AboutMeRight = exports.AboutWrapper = exports.CloseButton = exports.LinkItem = exports.LinkUl = exports.sideBarControl = exports.IconHolder = exports.SocialIconWrapper = exports.ImageHolder = exports.SideBar = exports.Card = exports.CardContainer = exports.ProjectDetailImage = exports.ProjectDetailHeader = exports.ProjectDetailInner = exports.ProjectDetailWrapper = exports.ProjectsWrapper = exports.ProjectsContainer = exports.StackHolder = exports.SubTextWrapper = exports.HeaderIntro = exports.IntroText = exports.IntroWrapper = exports.BurgerMenu = exports.TopBarContainer = exports.ProjectHeading = exports.Nav = exports.HeaderWrapper = void 0;
 
 var _styledComponents = _interopRequireWildcard(require("styled-components"));
 
@@ -13,8 +13,48 @@ function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return 
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
-function _templateObject55() {
+function _templateObject59() {
+  var data = _taggedTemplateLiteral(["\n    position: absolute;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    bottom: 0;\n    opacity: 0;\n    justify-content: space-evenly;\n    width: 300px;\n    height: 140px;\n    background-color: #ffffff;\n\n    -webkit-box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 20px 0px,\n      rgba(0, 0, 0, 0.02) 0px 0px 0px 1px;\n    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 20px 0px,\n      rgba(0, 0, 0, 0.02) 0px 0px 0px 1px;\n    animation: ", " 1s ease-in-out both;\n  "]);
+
+  _templateObject59 = function _templateObject59() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject58() {
+  var data = _taggedTemplateLiteral(["\nfrom {\n  opacity: 1;\n\n}\nto {\n  opacity: 0;\n \n}\n"]);
+
+  _templateObject58 = function _templateObject58() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject57() {
+  var data = _taggedTemplateLiteral(["\n0 {\n  opacity: 0;\nbottom: -15rem\n}\n\n50%{\n  opacity: 0;\n}\n70%{\n   opacity: 1;\n  bottom: 22rem\n}\n80%{\n   opacity: 1;\n  bottom: 20rem\n}\n\n90%{\n opacity: 1;\n  bottom: 21rem\n}\n100% {\n  opacity: 1;\n  bottom: 20rem\n}\n"]);
+
+  _templateObject57 = function _templateObject57() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject56() {
   var data = _taggedTemplateLiteral(["\n  padding: 2rem;\n  margin-bottom: 50px;\n"]);
+
+  _templateObject56 = function _templateObject56() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject55() {
+  var data = _taggedTemplateLiteral(["\n  background-color: #ffffff;\n  padding: 2rem;\n"]);
 
   _templateObject55 = function _templateObject55() {
     return data;
@@ -24,7 +64,7 @@ function _templateObject55() {
 }
 
 function _templateObject54() {
-  var data = _taggedTemplateLiteral(["\n  background-color: #ffffff;\n  padding: 2rem;\n"]);
+  var data = _taggedTemplateLiteral(["\n  padding: 2rem;\n"]);
 
   _templateObject54 = function _templateObject54() {
     return data;
@@ -34,7 +74,7 @@ function _templateObject54() {
 }
 
 function _templateObject53() {
-  var data = _taggedTemplateLiteral(["\n  padding: 2rem;\n"]);
+  var data = _taggedTemplateLiteral(["\n  padding: 2rem;\n  background-color: #ffffff;\n"]);
 
   _templateObject53 = function _templateObject53() {
     return data;
@@ -44,7 +84,7 @@ function _templateObject53() {
 }
 
 function _templateObject52() {
-  var data = _taggedTemplateLiteral(["\n  padding: 2rem;\n  background-color: #ffffff;\n"]);
+  var data = _taggedTemplateLiteral(["\n  width: 100%;\n"]);
 
   _templateObject52 = function _templateObject52() {
     return data;
@@ -54,7 +94,7 @@ function _templateObject52() {
 }
 
 function _templateObject51() {
-  var data = _taggedTemplateLiteral(["\n  width: 100%;\n"]);
+  var data = _taggedTemplateLiteral(["\n  padding-top: 10px;\n  width: 100%;\n\n  @media only screen and (min-width: 768px) {\n    width: 300px;\n  }\n"]);
 
   _templateObject51 = function _templateObject51() {
     return data;
@@ -64,7 +104,7 @@ function _templateObject51() {
 }
 
 function _templateObject50() {
-  var data = _taggedTemplateLiteral(["\n  padding-top: 10px;\n  width: 100%;\n\n  @media only screen and (min-width: 768px) {\n    width: 300px;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  width: 70%;\n  margin: 0 auto;\n\n  @media only screen and (min-width: 768px) {\n    display: flex;\n  }\n"]);
 
   _templateObject50 = function _templateObject50() {
     return data;
@@ -74,7 +114,7 @@ function _templateObject50() {
 }
 
 function _templateObject49() {
-  var data = _taggedTemplateLiteral(["\n  width: 70%;\n  margin: 0 auto;\n\n  @media only screen and (min-width: 768px) {\n    display: flex;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  width: 100%;\n"]);
 
   _templateObject49 = function _templateObject49() {
     return data;
@@ -84,7 +124,7 @@ function _templateObject49() {
 }
 
 function _templateObject48() {
-  var data = _taggedTemplateLiteral(["\n  width: 100%;\n"]);
+  var data = _taggedTemplateLiteral(["\n  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');\n  display: flex;\n  justify-content: space-evenly;\n  width: 200px;\n  margin-right: 2rem;\n  font-family: 'Nunito', sans-serif;\n  font-size: 7px;\n  @media only screen and (min-width: 600px) {\n    font-size: 1rem;\n    width: 300px;\n  }\n"]);
 
   _templateObject48 = function _templateObject48() {
     return data;
@@ -94,7 +134,7 @@ function _templateObject48() {
 }
 
 function _templateObject47() {
-  var data = _taggedTemplateLiteral(["\n  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');\n  display: flex;\n  justify-content: space-evenly;\n  width: 200px;\n  margin-right: 2rem;\n  font-family: 'Nunito', sans-serif;\n  font-size: 7px;\n  @media only screen and (min-width: 600px) {\n    font-size: 1rem;\n    width: 300px;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  margin-left: 20px;\n  font-size: 8px;\n\n  @media only screen and (min-width: 600px) {\n    font-size: 16px;\n  }\n"]);
 
   _templateObject47 = function _templateObject47() {
     return data;
@@ -104,7 +144,7 @@ function _templateObject47() {
 }
 
 function _templateObject46() {
-  var data = _taggedTemplateLiteral(["\n  margin-left: 20px;\n  font-size: 8px;\n\n  @media only screen and (min-width: 600px) {\n    font-size: 16px;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  width: 90%;\n  margin: 0 auto;\n"]);
 
   _templateObject46 = function _templateObject46() {
     return data;
@@ -114,7 +154,7 @@ function _templateObject46() {
 }
 
 function _templateObject45() {
-  var data = _taggedTemplateLiteral(["\n  width: 90%;\n  margin: 0 auto;\n"]);
+  var data = _taggedTemplateLiteral(["\n  display: flex;\n  align-items: center;\n\n  position: fixed;\n  bottom: 0;\n  width: 100%;\n  border-top: 1px solid rgb(234, 234, 234);\n  height: 60px;\n  background-color: #fafafa;\n"]);
 
   _templateObject45 = function _templateObject45() {
     return data;
@@ -124,7 +164,7 @@ function _templateObject45() {
 }
 
 function _templateObject44() {
-  var data = _taggedTemplateLiteral(["\n  display: flex;\n  align-items: center;\n\n  position: fixed;\n  bottom: 0;\n  width: 100%;\n  border-top: 1px solid rgb(234, 234, 234);\n  height: 60px;\n  background-color: #fafafa;\n"]);
+  var data = _taggedTemplateLiteral(["\n  background-color: #000000;\n  color: #ffffff;\n  font-size: 1rem;\n"]);
 
   _templateObject44 = function _templateObject44() {
     return data;
@@ -234,7 +274,7 @@ function _templateObject34() {
 }
 
 function _templateObject33() {
-  var data = _taggedTemplateLiteral(["\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  width: 80%;\n  height: 100%;\n  margin-bottom: 10px;\n  margin: 0 auto;\n"]);
+  var data = _taggedTemplateLiteral(["\n  position: relative;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  width: 80%;\n  height: 100%;\n  margin-bottom: 10px;\n  margin: 0 auto;\n"]);
 
   _templateObject33 = function _templateObject33() {
     return data;
@@ -594,7 +634,7 @@ var IntroText = _styledComponents["default"].div(_templateObject8(), fadeInDown)
 
 exports.IntroText = IntroText;
 
-var HeaderIntro = _styledComponents["default"].h1(_templateObject9());
+var HeaderIntro = _styledComponents["default"].div(_templateObject9());
 
 exports.HeaderIntro = HeaderIntro;
 
@@ -732,56 +772,66 @@ var Btn = _styledComponents["default"].button(_templateObject41());
 exports.Btn = Btn;
 var SendBtn = (0, _styledComponents["default"])(Btn)(_templateObject42());
 exports.SendBtn = SendBtn;
-var AboutMeBtn = (0, _styledComponents["default"])(Btn)(_templateObject43()); //Footer
-
+var AboutMeBtn = (0, _styledComponents["default"])(Btn)(_templateObject43());
 exports.AboutMeBtn = AboutMeBtn;
+var ThankYouBtn = (0, _styledComponents["default"])(Btn)(_templateObject44()); //Footer
 
-var FooterWrapper = _styledComponents["default"].footer(_templateObject44());
+exports.ThankYouBtn = ThankYouBtn;
+
+var FooterWrapper = _styledComponents["default"].footer(_templateObject45());
 
 exports.FooterWrapper = FooterWrapper;
 
-var FooterContent = _styledComponents["default"].div(_templateObject45());
+var FooterContent = _styledComponents["default"].div(_templateObject46());
 
 exports.FooterContent = FooterContent;
 
-var FooterContentWrapper = _styledComponents["default"].div(_templateObject46());
+var FooterContentWrapper = _styledComponents["default"].div(_templateObject47());
 
 exports.FooterContentWrapper = FooterContentWrapper;
 
-var FooterMenu = _styledComponents["default"].ul(_templateObject47()); //About Me page
+var FooterMenu = _styledComponents["default"].ul(_templateObject48()); //About Me page
 // About Me Main Page
 
 
 exports.FooterMenu = FooterMenu;
 
-var AboutPageWrapper = _styledComponents["default"].div(_templateObject48());
+var AboutPageWrapper = _styledComponents["default"].div(_templateObject49());
 
 exports.AboutPageWrapper = AboutPageWrapper;
 
-var AboutPageInner = _styledComponents["default"].div(_templateObject49());
+var AboutPageInner = _styledComponents["default"].div(_templateObject50());
 
 exports.AboutPageInner = AboutPageInner;
 
-var AboutMePageLeft = _styledComponents["default"].div(_templateObject50());
+var AboutMePageLeft = _styledComponents["default"].div(_templateObject51());
 
 exports.AboutMePageLeft = AboutMePageLeft;
 
-var AboutMePageRight = _styledComponents["default"].div(_templateObject51());
+var AboutMePageRight = _styledComponents["default"].div(_templateObject52());
 
 exports.AboutMePageRight = AboutMePageRight;
 
-var AboutMeIntro = _styledComponents["default"].div(_templateObject52());
+var AboutMeIntro = _styledComponents["default"].div(_templateObject53());
 
 exports.AboutMeIntro = AboutMeIntro;
 
-var AboutMeExpirience = _styledComponents["default"].div(_templateObject53());
+var AboutMeExpirience = _styledComponents["default"].div(_templateObject54());
 
 exports.AboutMeExpirience = AboutMeExpirience;
 
-var AboutMeSkills = _styledComponents["default"].div(_templateObject54());
+var AboutMeSkills = _styledComponents["default"].div(_templateObject55());
 
 exports.AboutMeSkills = AboutMeSkills;
 
-var AboutMeEducation = _styledComponents["default"].div(_templateObject55());
+var AboutMeEducation = _styledComponents["default"].div(_templateObject56());
 
 exports.AboutMeEducation = AboutMeEducation;
+var slideUp = (0, _styledComponents.keyframes)(_templateObject57());
+var fadeOut = (0, _styledComponents.keyframes)(_templateObject58());
+
+var ModalClass = function ModalClass(status) {
+  return _styledComponents["default"].div(_templateObject59(), status ? slideUp : fadeOut);
+};
+
+exports.ModalClass = ModalClass;

@@ -97,7 +97,7 @@ export const IntroText = styled.div`
   width: 400px;
 `;
 
-export const HeaderIntro = styled.h1`
+export const HeaderIntro = styled.div`
   @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
 
   font-family: 'Raleway', sans-serif;
@@ -368,6 +368,7 @@ export const AboutMeLeft = styled.div`
 
 //Form
 export const ContactContainer = styled.div`
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -431,6 +432,12 @@ export const SendBtn = styled(Btn)`
 `;
 
 export const AboutMeBtn = styled(Btn)`
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 1rem;
+`;
+
+export const ThankYouBtn = styled(Btn)`
   background-color: #000000;
   color: #ffffff;
   font-size: 1rem;
@@ -521,3 +528,62 @@ export const AboutMeEducation = styled.div`
   padding: 2rem;
   margin-bottom: 50px;
 `;
+
+const slideUp = keyframes`
+0 {
+  opacity: 0;
+bottom: -15rem
+}
+
+50%{
+  opacity: 0;
+}
+70%{
+   opacity: 1;
+  bottom: 22rem
+}
+80%{
+   opacity: 1;
+  bottom: 20rem
+}
+
+90%{
+ opacity: 1;
+  bottom: 21rem
+}
+100% {
+  opacity: 1;
+  bottom: 20rem
+}
+`;
+
+const fadeOut = keyframes`
+from {
+  opacity: 1;
+
+}
+to {
+  opacity: 0;
+ 
+}
+`;
+export const ModalClass = (status) => {
+  return styled.div`
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: 0;
+    opacity: 0;
+    justify-content: space-evenly;
+    width: 300px;
+    height: 140px;
+    background-color: #ffffff;
+
+    -webkit-box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 20px 0px,
+      rgba(0, 0, 0, 0.02) 0px 0px 0px 1px;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 20px 0px,
+      rgba(0, 0, 0, 0.02) 0px 0px 0px 1px;
+    animation: ${status ? slideUp : fadeOut} 1s ease-in-out both;
+  `;
+};
