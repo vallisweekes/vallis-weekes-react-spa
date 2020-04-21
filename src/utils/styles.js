@@ -10,7 +10,7 @@ export const HeaderWrapper = styled.header`
   border-bottom: 2px solid rgb(234, 234, 234);
 
   @media only screen and (min-width: 600px) {
-    height: 70vh;
+    height: 50vh;
   }
 `;
 

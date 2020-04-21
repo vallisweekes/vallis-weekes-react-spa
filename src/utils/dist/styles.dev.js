@@ -554,7 +554,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  display: flex;\n  width: 100px;\n  flex-direction: column;\n  justify-content: flex-end;\n  width: 100%;\n  height: 450px;\n  border-bottom: 2px solid\xA0rgb(234, 234, 234);\n\n  @media only screen and (min-width: 600px) {\n    height: 70vh;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  display: flex;\n  width: 100px;\n  flex-direction: column;\n  justify-content: flex-end;\n  width: 100%;\n  height: 450px;\n  border-bottom: 2px solid\xA0rgb(234, 234, 234);\n\n  @media only screen and (min-width: 600px) {\n    height: 50vh;\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
