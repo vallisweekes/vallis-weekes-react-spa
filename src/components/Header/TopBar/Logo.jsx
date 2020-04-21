@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 const Logo = () => {
   return (
-    <div to="/">
-      <Link>
+    <div>
+      <Link to="/">
         <h3>VALLIS WEEKES</h3>
       </Link>
     </div>
