@@ -414,7 +414,7 @@ function _templateObject23() {
 }
 
 function _templateObject22() {
-  var data = _taggedTemplateLiteral(["\n  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');\n  display: none;\n  justify-content: space-between;\n  width: 350px;\n  margin-left: 6rem;\n  font-family: 'Nunito', sans-serif;\n\n  @media only screen and (min-width: 768px) {\n    display: flex;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');\n  display: none;\n  justify-content: space-between;\n  width: 400px;\n  margin-left: 6rem;\n  font-family: 'Nunito', sans-serif;\n\n  @media only screen and (min-width: 768px) {\n    display: flex;\n  }\n"]);
 
   _templateObject22 = function _templateObject22() {
     return data;
@@ -504,7 +504,7 @@ function _templateObject14() {
 }
 
 function _templateObject13() {
-  var data = _taggedTemplateLiteral(["\n  @media only screen and (min-width: 600px) {\n    width: 80%;\n    display: flex;\n    justify-content: space-evenly;\n    flex-wrap: wrap;\n    flex-direction: row;\n    margin-bottom: 30px;\n  }\n\n  @media only screen and (min-width: 1200px) {\n    width: 60%;\n    display: flex;\n    justify-content: space-between;\n    flex-wrap: wrap;\n    flex-direction: row;\n    margin-bottom: 30px;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  @media only screen and (min-width: 600px) {\n    width: 80%;\n    display: flex;\n    justify-content: space-evenly;\n    flex-wrap: wrap;\n    flex-direction: row;\n    margin-bottom: 30px;\n  }\n"]);
 
   _templateObject13 = function _templateObject13() {
     return data;

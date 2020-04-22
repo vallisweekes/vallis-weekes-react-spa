@@ -152,15 +152,6 @@ export const ProjectsWrapper = styled.section`
     flex-direction: row;
     margin-bottom: 30px;
   }
-
-  @media only screen and (min-width: 1200px) {
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin-bottom: 30px;
-  }
 `;
 
 export const ProjectDetailWrapper = styled.div`
@@ -235,7 +226,7 @@ export const Nav = styled.ul`
   @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
   display: none;
   justify-content: space-between;
-  width: 350px;
+  width: 400px;
   margin-left: 6rem;
   font-family: 'Nunito', sans-serif;
 
