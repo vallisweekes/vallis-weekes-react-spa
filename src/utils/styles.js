@@ -145,7 +145,7 @@ export const ProjectsContainer = styled.section`
 
 export const ProjectsWrapper = styled.section`
   @media only screen and (min-width: 768px) {
-    width: 75%;
+    width: 65%;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
