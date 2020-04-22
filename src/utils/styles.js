@@ -154,9 +154,9 @@ export const ProjectsWrapper = styled.section`
   }
 
   @media only screen and (min-width: 1200px) {
-    width: 70%;
+    width: 60%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-wrap: wrap;
     flex-direction: row;
     margin-bottom: 30px;
