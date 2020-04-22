@@ -504,7 +504,7 @@ function _templateObject14() {
 }
 
 function _templateObject13() {
-  var data = _taggedTemplateLiteral(["\n  @media only screen and (min-width: 768px) {\n    width: 65%;\n    display: flex;\n    justify-content: space-evenly;\n    flex-wrap: wrap;\n    flex-direction: row;\n    margin-bottom: 30px;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  @media only screen and (min-width: 768px) {\n    width: 75%;\n    display: flex;\n    justify-content: space-evenly;\n    flex-wrap: wrap;\n    flex-direction: row;\n    margin-bottom: 30px;\n  }\n"]);
 
   _templateObject13 = function _templateObject13() {
     return data;
