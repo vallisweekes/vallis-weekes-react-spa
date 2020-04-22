@@ -451,7 +451,7 @@ export const FooterWrapper = styled.footer`
   display: flex;
   align-items: center;
 
-  /* position: fixed; */
+  position: fixed;
   bottom: 0;
   width: 100%;
   border-top: 1px solid rgb(234, 234, 234);
@@ -595,6 +595,7 @@ export const BackButton = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 10px;
   margin-left: 30px;
   cursor: pointer;
 
