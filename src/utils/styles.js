@@ -607,3 +607,8 @@ export const BackButton = styled.div`
     background-color: #f3f5f7;
   }
 `;
+
+export const FlexFix = styled(AboutPageInner)`
+  display: flex;
+  padding-top: 20px;
+`;

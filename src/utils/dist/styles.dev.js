@@ -5,13 +5,23 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.BackButton = exports.ModalClass = exports.AboutMeEducation = exports.AboutMeSkills = exports.AboutMeExpirience = exports.AboutMeIntro = exports.AboutMePageRight = exports.AboutMePageLeft = exports.AboutPageInner = exports.AboutPageWrapper = exports.FooterMenu = exports.FooterContentWrapper = exports.FooterContent = exports.FooterWrapper = exports.ThankYouBtn = exports.AboutMeBtn = exports.SendBtn = exports.Btn = exports.Button = exports.Textarea = exports.TextAreaWrapper = exports.Label = exports.Input = exports.ContactFormHeading = exports.StyleForm = exports.ContactContainer = exports.AboutMeLeft = exports.AboutMeRight = exports.AboutWrapper = exports.CloseButton = exports.LinkItem = exports.LinkUl = exports.sideBarControl = exports.IconHolder = exports.SocialIconWrapper = exports.ImageHolder = exports.SideBar = exports.Card = exports.CardContainer = exports.ProjectDetailImage = exports.ProjectDetailHeader = exports.ProjectDetailInner = exports.ProjectDetailWrapper = exports.ProjectsWrapper = exports.ProjectsContainer = exports.StackHolder = exports.SubTextWrapper = exports.HeaderIntro = exports.IntroText = exports.IntroWrapper = exports.BurgerMenu = exports.TopBarContainer = exports.ProjectHeading = exports.Nav = exports.HeaderWrapper = void 0;
+exports.FlexFix = exports.BackButton = exports.ModalClass = exports.AboutMeEducation = exports.AboutMeSkills = exports.AboutMeExpirience = exports.AboutMeIntro = exports.AboutMePageRight = exports.AboutMePageLeft = exports.AboutPageInner = exports.AboutPageWrapper = exports.FooterMenu = exports.FooterContentWrapper = exports.FooterContent = exports.FooterWrapper = exports.ThankYouBtn = exports.AboutMeBtn = exports.SendBtn = exports.Btn = exports.Button = exports.Textarea = exports.TextAreaWrapper = exports.Label = exports.Input = exports.ContactFormHeading = exports.StyleForm = exports.ContactContainer = exports.AboutMeLeft = exports.AboutMeRight = exports.AboutWrapper = exports.CloseButton = exports.LinkItem = exports.LinkUl = exports.sideBarControl = exports.IconHolder = exports.SocialIconWrapper = exports.ImageHolder = exports.SideBar = exports.Card = exports.CardContainer = exports.ProjectDetailImage = exports.ProjectDetailHeader = exports.ProjectDetailInner = exports.ProjectDetailWrapper = exports.ProjectsWrapper = exports.ProjectsContainer = exports.StackHolder = exports.SubTextWrapper = exports.HeaderIntro = exports.IntroText = exports.IntroWrapper = exports.BurgerMenu = exports.TopBarContainer = exports.ProjectHeading = exports.Nav = exports.HeaderWrapper = void 0;
 
 var _styledComponents = _interopRequireWildcard(require("styled-components"));
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+function _templateObject61() {
+  var data = _taggedTemplateLiteral(["\n  display: flex;\n  padding-top: 20px;\n"]);
+
+  _templateObject61 = function _templateObject61() {
+    return data;
+  };
+
+  return data;
+}
 
 function _templateObject60() {
   var data = _taggedTemplateLiteral(["\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  margin-left: 30px;\n  cursor: pointer;\n\n  width: 40px;\n  height: 40px;\n  border-radius: 50px;\n  transition: all 1s linear;\n\n  :hover {\n    background-color: #f3f5f7;\n  }\n"]);
@@ -849,3 +859,5 @@ exports.ModalClass = ModalClass;
 var BackButton = _styledComponents["default"].div(_templateObject60());
 
 exports.BackButton = BackButton;
+var FlexFix = (0, _styledComponents["default"])(AboutPageInner)(_templateObject61());
+exports.FlexFix = FlexFix;

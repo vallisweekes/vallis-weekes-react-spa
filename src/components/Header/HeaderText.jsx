@@ -11,7 +11,7 @@ const HeaderText = () => {
         <h1>MOTIVATED</h1>
       </HeaderIntro>
       <SubTextWrapper>
-        <h2 className="fadeInDown">FULL-STACK DEVELOPER</h2>
+        <h2 className="fadeInDown">FRONT END DEVELOPER</h2>
       </SubTextWrapper>
     </IntroText>
   );
