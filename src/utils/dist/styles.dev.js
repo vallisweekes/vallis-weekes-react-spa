@@ -5,13 +5,23 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.ModalClass = exports.AboutMeEducation = exports.AboutMeSkills = exports.AboutMeExpirience = exports.AboutMeIntro = exports.AboutMePageRight = exports.AboutMePageLeft = exports.AboutPageInner = exports.AboutPageWrapper = exports.FooterMenu = exports.FooterContentWrapper = exports.FooterContent = exports.FooterWrapper = exports.ThankYouBtn = exports.AboutMeBtn = exports.SendBtn = exports.Btn = exports.Button = exports.Textarea = exports.TextAreaWrapper = exports.Label = exports.Input = exports.ContactFormHeading = exports.StyleForm = exports.ContactContainer = exports.AboutMeLeft = exports.AboutMeRight = exports.AboutWrapper = exports.CloseButton = exports.LinkItem = exports.LinkUl = exports.sideBarControl = exports.IconHolder = exports.SocialIconWrapper = exports.ImageHolder = exports.SideBar = exports.Card = exports.CardContainer = exports.ProjectDetailImage = exports.ProjectDetailHeader = exports.ProjectDetailInner = exports.ProjectDetailWrapper = exports.ProjectsWrapper = exports.ProjectsContainer = exports.StackHolder = exports.SubTextWrapper = exports.HeaderIntro = exports.IntroText = exports.IntroWrapper = exports.BurgerMenu = exports.TopBarContainer = exports.ProjectHeading = exports.Nav = exports.HeaderWrapper = void 0;
+exports.BackButton = exports.ModalClass = exports.AboutMeEducation = exports.AboutMeSkills = exports.AboutMeExpirience = exports.AboutMeIntro = exports.AboutMePageRight = exports.AboutMePageLeft = exports.AboutPageInner = exports.AboutPageWrapper = exports.FooterMenu = exports.FooterContentWrapper = exports.FooterContent = exports.FooterWrapper = exports.ThankYouBtn = exports.AboutMeBtn = exports.SendBtn = exports.Btn = exports.Button = exports.Textarea = exports.TextAreaWrapper = exports.Label = exports.Input = exports.ContactFormHeading = exports.StyleForm = exports.ContactContainer = exports.AboutMeLeft = exports.AboutMeRight = exports.AboutWrapper = exports.CloseButton = exports.LinkItem = exports.LinkUl = exports.sideBarControl = exports.IconHolder = exports.SocialIconWrapper = exports.ImageHolder = exports.SideBar = exports.Card = exports.CardContainer = exports.ProjectDetailImage = exports.ProjectDetailHeader = exports.ProjectDetailInner = exports.ProjectDetailWrapper = exports.ProjectsWrapper = exports.ProjectsContainer = exports.StackHolder = exports.SubTextWrapper = exports.HeaderIntro = exports.IntroText = exports.IntroWrapper = exports.BurgerMenu = exports.TopBarContainer = exports.ProjectHeading = exports.Nav = exports.HeaderWrapper = void 0;
 
 var _styledComponents = _interopRequireWildcard(require("styled-components"));
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+function _templateObject60() {
+  var data = _taggedTemplateLiteral(["\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  margin-left: 30px;\n  cursor: pointer;\n\n  width: 40px;\n  height: 40px;\n  border-radius: 50px;\n  transition: all 1s linear;\n\n  :hover {\n    background-color: #f3f5f7;\n  }\n"]);
+
+  _templateObject60 = function _templateObject60() {
+    return data;
+  };
+
+  return data;
+}
 
 function _templateObject59() {
   var data = _taggedTemplateLiteral(["\n    position: absolute;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    bottom: 0;\n    opacity: 0;\n    justify-content: space-evenly;\n    width: 300px;\n    height: 140px;\n    background-color: #ffffff;\n\n    -webkit-box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 20px 0px,\n      rgba(0, 0, 0, 0.02) 0px 0px 0px 1px;\n    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 20px 0px,\n      rgba(0, 0, 0, 0.02) 0px 0px 0px 1px;\n    animation: ", " 1s ease-in-out both;\n  "]);
@@ -334,7 +344,7 @@ function _templateObject28() {
 }
 
 function _templateObject27() {
-  var data = _taggedTemplateLiteral(["\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  text-decoration: none;\n  font-size: 20px;\n"]);
+  var data = _taggedTemplateLiteral(["\n  @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Kanit:wght@800&display=swap');\n  display: flex;\n  flex-direction: column;\n  /* align-items: center; */\n  margin-left: 2rem;\n  text-decoration: none;\n  text-transform: uppercase;\n  font-size: 2rem;\n"]);
 
   _templateObject27 = function _templateObject27() {
     return data;
@@ -344,7 +354,7 @@ function _templateObject27() {
 }
 
 function _templateObject26() {
-  var data = _taggedTemplateLiteral(["\n    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');\n    height: 100vh;\n    width: 250px;\n    position: fixed;\n    z-index: 1;\n    top: 0;\n\n    background-color: #111;\n    overflow-x: hidden;\n    padding-top: 60px;\n    font-family: 'Nunito', sans-serif;\n    color: #ffffff;\n    animation: ", " 0.5s linear both;\n  "]);
+  var data = _taggedTemplateLiteral(["\n    height: 100vh;\n    width: 250px;\n    position: fixed;\n    z-index: 1;\n    top: 0;\n\n    background-color: #111;\n    overflow-x: hidden;\n    padding-top: 60px;\n    font-family: 'Kanit', sans-serif;\n\n    color: #ffffff;\n    animation: ", " 0.5s linear both;\n  "]);
 
   _templateObject26 = function _templateObject26() {
     return data;
@@ -835,3 +845,7 @@ var ModalClass = function ModalClass(status) {
 };
 
 exports.ModalClass = ModalClass;
+
+var BackButton = _styledComponents["default"].div(_templateObject60());
+
+exports.BackButton = BackButton;

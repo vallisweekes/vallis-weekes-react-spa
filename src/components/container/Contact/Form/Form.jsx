@@ -26,14 +26,11 @@ const ContactForm = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    // const details = { ...values, formValue };
-    // details[e.target.name] = e.target.value;
     setValues({ ...values, [name]: value });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
     const sendEmail = async () => {
       try {
         await axios.post(url, values);
@@ -42,8 +39,6 @@ const ContactForm = () => {
       }
     };
     sendEmail();
-
-    // const data = values
   };
 
   const handleShowThankYou = () => {

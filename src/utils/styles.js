@@ -271,7 +271,6 @@ to {
 
 export const sideBarControl = (showSideBar) => {
   return styled.div`
-    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
     height: 100vh;
     width: 250px;
     position: fixed;
@@ -281,18 +280,22 @@ export const sideBarControl = (showSideBar) => {
     background-color: #111;
     overflow-x: hidden;
     padding-top: 60px;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Kanit', sans-serif;
+
     color: #ffffff;
     animation: ${showSideBar ? slideropen : sliderclose} 0.5s linear both;
   `;
 };
 
 export const LinkUl = styled.ul`
+  @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Kanit:wght@800&display=swap');
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
+  margin-left: 2rem;
   text-decoration: none;
-  font-size: 20px;
+  text-transform: uppercase;
+  font-size: 2rem;
 `;
 
 export const LinkItem = styled.li`
@@ -587,3 +590,20 @@ export const ModalClass = (status) => {
     animation: ${status ? slideUp : fadeOut} 1s ease-in-out both;
   `;
 };
+
+export const BackButton = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+  cursor: pointer;
+
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 1s linear;
+
+  :hover {
+    background-color: #f3f5f7;
+  }
+`;

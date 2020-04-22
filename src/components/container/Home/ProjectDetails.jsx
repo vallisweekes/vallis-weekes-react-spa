@@ -5,6 +5,7 @@ import {
   ProjectDetailInner,
   ProjectDetailHeader,
   ProjectDetailImage,
+  BackButton,
 } from '../../../utils/styles';
 import { results } from '../../../db/projects.json';
 const ProjectDetails = ({ match, history }) => {
@@ -27,9 +28,9 @@ const ProjectDetails = ({ match, history }) => {
 
   return (
     <ProjectDetailWrapper>
-      <div style={{ marginLeft: 30, cursor: 'pointer', paddingTop: 10 }}>
+      <BackButton>
         <KeyboardBackspaceIcon onClick={handleBackButton} />
-      </div>
+      </BackButton>
       <ProjectDetailInner>
         <ProjectDetailHeader>
           <h1>{project.title}</h1>
