@@ -391,10 +391,10 @@ export const ContactContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 80%;
+  margin: 0 auto;
+  width: 70%;
   height: 100%;
   margin-bottom: 10px;
-  margin: 0 auto;
 `;
 export const StyleForm = styled.div`
   display: flex;
@@ -496,7 +496,7 @@ export const FooterMenu = styled.ul`
   width: 200px;
   margin-right: 2rem;
   font-family: 'Nunito', sans-serif;
-  font-size: 7px;
+  font-size: 7.5px;
   @media only screen and (min-width: 600px) {
     font-size: 1rem;
     width: 300px;
