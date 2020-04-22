@@ -144,8 +144,8 @@ export const ProjectsContainer = styled.section`
 `;
 
 export const ProjectsWrapper = styled.section`
-  @media only screen and (min-width: 1200px) {
-    width: 965px;
+  @media only screen and (min-width: 768px) {
+    width: 70%;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
