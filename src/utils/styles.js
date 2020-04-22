@@ -299,6 +299,8 @@ export const LinkUl = styled.ul`
 `;
 
 export const LinkItem = styled.li`
+  padding: 10px;
+  margin-bottom: 5px;
   background-color: transparent;
   transition: all 1s linear;
   :hover {

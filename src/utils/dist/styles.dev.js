@@ -344,7 +344,7 @@ function _templateObject29() {
 }
 
 function _templateObject28() {
-  var data = _taggedTemplateLiteral(["\n  background-color: transparent;\n  transition: all 1s linear;\n  :hover {\n    background-color: rgba(33, 33, 33, 0.77);\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  padding: 10px;\n  margin-bottom: 5px;\n  background-color: transparent;\n  transition: all 1s linear;\n  :hover {\n    background-color: rgba(33, 33, 33, 0.77);\n  }\n"]);
 
   _templateObject28 = function _templateObject28() {
     return data;
