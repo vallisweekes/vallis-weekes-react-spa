@@ -14,15 +14,6 @@ export const HeaderWrapper = styled.header`
   }
 `;
 
-export const Nav = styled.ul`
-  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
-  display: flex;
-  justify-content: space-between;
-  width: 300px;
-  margin-right: 2rem;
-  font-family: 'Nunito', sans-serif;
-`;
-
 export const ProjectHeading = styled.section`
   padding: 2rem;
   font-size: 1.5rem;
@@ -51,6 +42,14 @@ export const BurgerMenu = styled.div`
   :hover {
     background-color: #f3f5f7;
   }
+
+  @media only screen and (min-width: 768px) {
+    display: none;
+  }
+`;
+
+export const HeaderLogo = styled.div`
+  margin-left: 10px;
 `;
 
 export const IntroWrapper = styled.div`
@@ -222,6 +221,19 @@ export const ImageHolder = (props) => {
     }
   `;
 };
+
+export const Nav = styled.ul`
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+  display: none;
+  justify-content: space-between;
+  width: 350px;
+  margin-left: 6rem;
+  font-family: 'Nunito', sans-serif;
+
+  @media only screen and (min-width: 768px) {
+    display: flex;
+  }
+`;
 
 export const SocialIconWrapper = styled.div`
   display: flex;

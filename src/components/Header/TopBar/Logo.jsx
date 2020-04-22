@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import { HeaderLogo } from '../../../utils/styles';
 const Logo = () => {
   return (
-    <div>
+    <HeaderLogo>
       <Link to="/">
         <h3>VALLIS WEEKES</h3>
       </Link>
-    </div>
+    </HeaderLogo>
   );
 };
 

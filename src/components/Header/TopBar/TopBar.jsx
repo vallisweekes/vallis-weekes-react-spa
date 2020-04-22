@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Logo from './Logo';
-// import NavBar from './NavBar';
+import NavBar from './NavBar';
 import SideMenu from '../../SideMenu';
 import SocialIcon from './SocialIcon';
 import MenuIcon from '@material-ui/icons/Menu';
@@ -32,9 +32,11 @@ const TopBar = () => {
       <BurgerMenu onClick={handleSideBarOpen}>
         <MenuIcon />
       </BurgerMenu>
-      {sideBar ? <SideMenu showSideBar={sideBar} /> : null}
+      <section id="sideBar-fix">
+        {sideBar ? <SideMenu showSideBar={sideBar} /> : null}
+      </section>
       <Logo />
-      {/*<NavBar />*/}
+      <NavBar />
       <SocialIcon />
     </TopBarContainer>
   );
