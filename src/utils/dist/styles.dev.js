@@ -314,7 +314,7 @@ function _templateObject33() {
 }
 
 function _templateObject32() {
-  var data = _taggedTemplateLiteral(["\n  background-image: url('http://www.vallisweekes.com/portfolio_assets/aboutme.jpg');\n  width: 100%;\n  /* margin-bottom: 10px; */\n  object-fit: cover;\n  @media only screen and (min-width: 768px) {\n    margin-bottom: 0;\n    width: 55%;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  background-image: url('http://www.vallisweekes.com/portfolio_assets/aboutme.jpg');\n  background-repeat: no-repeat;\n  background-size: cover;\n  width: 100%;\n  /* margin-bottom: 10px; */\n  object-fit: cover;\n  @media only screen and (min-width: 768px) {\n    margin-bottom: 0;\n    width: 55%;\n  }\n"]);
 
   _templateObject32 = function _templateObject32() {
     return data;

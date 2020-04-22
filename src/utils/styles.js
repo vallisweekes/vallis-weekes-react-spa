@@ -360,6 +360,8 @@ export const AboutWrapper = styled.div`
 
 export const AboutMeRight = styled.div`
   background-image: url('http://www.vallisweekes.com/portfolio_assets/aboutme.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
   /* margin-bottom: 10px; */
   object-fit: cover;
