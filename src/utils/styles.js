@@ -152,6 +152,15 @@ export const ProjectsWrapper = styled.section`
     flex-direction: row;
     margin-bottom: 30px;
   }
+
+  @media only screen and (min-width: 1200px) {
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 30px;
+  }
 `;
 
 export const ProjectDetailWrapper = styled.div`
