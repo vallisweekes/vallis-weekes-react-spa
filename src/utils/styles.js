@@ -342,9 +342,9 @@ export const AboutWrapper = styled.div`
 `;
 
 export const AboutMeRight = styled.div`
-  background-image: url('https://portfolio-vw.s3.eu-west-2.amazonaws.com/aboutme.jpg');
+  background-image: url('http://www.vallisweekes.com/portfolio_assets/aboutme.jpg');
   width: 100%;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
   object-fit: cover;
   @media only screen and (min-width: 768px) {
     margin-bottom: 0;
@@ -448,7 +448,7 @@ export const FooterWrapper = styled.footer`
   display: flex;
   align-items: center;
 
-  position: fixed;
+  /* position: fixed; */
   bottom: 0;
   width: 100%;
   border-top: 1px solid rgb(234, 234, 234);

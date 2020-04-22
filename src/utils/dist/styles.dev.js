@@ -154,7 +154,7 @@ function _templateObject46() {
 }
 
 function _templateObject45() {
-  var data = _taggedTemplateLiteral(["\n  display: flex;\n  align-items: center;\n\n  position: fixed;\n  bottom: 0;\n  width: 100%;\n  border-top: 1px solid rgb(234, 234, 234);\n  height: 60px;\n  background-color: #fafafa;\n"]);
+  var data = _taggedTemplateLiteral(["\n  display: flex;\n  align-items: center;\n\n  /* position: fixed; */\n  bottom: 0;\n  width: 100%;\n  border-top: 1px solid rgb(234, 234, 234);\n  height: 60px;\n  background-color: #fafafa;\n"]);
 
   _templateObject45 = function _templateObject45() {
     return data;
@@ -294,7 +294,7 @@ function _templateObject32() {
 }
 
 function _templateObject31() {
-  var data = _taggedTemplateLiteral(["\n  background-image: url('https://portfolio-vw.s3.eu-west-2.amazonaws.com/aboutme.jpg');\n  width: 100%;\n  margin-bottom: 10px;\n  object-fit: cover;\n  @media only screen and (min-width: 768px) {\n    margin-bottom: 0;\n    width: 55%;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  background-image: url('http://www.vallisweekes.com/portfolio_assets/aboutme.jpg');\n  width: 100%;\n  /* margin-bottom: 10px; */\n  object-fit: cover;\n  @media only screen and (min-width: 768px) {\n    margin-bottom: 0;\n    width: 55%;\n  }\n"]);
 
   _templateObject31 = function _templateObject31() {
     return data;

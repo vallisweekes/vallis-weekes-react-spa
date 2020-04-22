@@ -2,29 +2,43 @@
     "results": [{
             "_id": 1,
             "title": "Restaraunt Review",
-            "image": "https://portfolio-vw.s3.eu-west-2.amazonaws.com/restaraunt_review_thumb.png",
+            "image": "http://www.vallisweekes.com/portfolio_assets/restaraunt_review_thumb.png",
             "stack": "React | CSS | HTML5 ",
             "url": ""
         }, {
             "_id": 2,
             "title": "Voyage",
-            "image": "https://portfolio-vw.s3.eu-west-2.amazonaws.com/voyage_thumb.png",
+            "image": "http://www.vallisweekes.com/portfolio_assets/voyage_thumb.png",
             "stack": "React | CSS | HTML5 ",
             "url": "https://www.vallisweekes.com/portfolio/voyage_proto/"
         },
         {
             "_id": 3,
             "title": "Mushroom Vs Sonic",
-            "image": "https://portfolio-vw.s3.eu-west-2.amazonaws.com/mushroom_sonic_thumb.png",
+            "image": "http://www.vallisweekes.com/portfolio_assets/mushroom_sonic_thumb.png",
             "stack": "React | CSS | HTML5 ",
             "url": "https://mushoom-vs-sonic-game.netlify.app/"
         },
         {
             "_id": 4,
             "title": "Film Festival",
-            "image": "https://portfolio-vw.s3.eu-west-2.amazonaws.com/film_fest2_thumb.png",
+            "image": "http://www.vallisweekes.com/portfolio_assets/film_fest2_thumb.png",
             "stack": "React | CSS | HTML5 ",
             "url": "https://www.vallisweekes.com/portfolio/film_festival_project/"
+        },
+        {
+            "_id": 5,
+            "title": "Coach Dorrette Harris",
+            "image": "http://www.vallisweekes.com/portfolio_assets/coach_dorrette_Harris.png",
+            "stack": "WordPress| CSS | HTML5 ",
+            "url": ""
+        },
+        {
+            "_id": 6,
+            "title": "ShakerHD Production",
+            "image": "http://www.vallisweekes.com/portfolio_assets/shakerhdpro_thumb.png",
+            "stack": "WordPress | CSS | HTML5 ",
+            "url": ""
         }
     ]
 }

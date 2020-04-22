@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
-
+import { url } from '../../../../utils/default.json';
 import {
   ContactContainer,
   StyleForm,
@@ -16,7 +16,8 @@ import Modal from '../../../shared/Modal';
 
 const ContactForm = () => {
   const [thankYou, setThankYou] = useState(false);
-  const [formValue, setFormValue] = useState({
+
+  const [values, setValues] = useState({
     firstname: '',
     lastname: '',
     email: '',
@@ -24,27 +25,37 @@ const ContactForm = () => {
   });
 
   const handleChange = (e) => {
-    const details = { ...formValue };
-    details[e.target.name] = e.target.value;
-    setFormValue(details);
+    const { name, value } = e.target;
+    // const details = { ...values, formValue };
+    // details[e.target.name] = e.target.value;
+    setValues({ ...values, [name]: value });
   };
 
-  useEffect(() => {
-    const sendEmail = async () => {
-      await axios.post('http://localhost:9000/contact', formValue);
-    };
-    sendEmail();
-    console.log('inside use effect', formValue);
-  }, [formValue]);
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('This is the form data', formValue);
+
+    const sendEmail = async () => {
+      try {
+        await axios.post(url, values);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    sendEmail();
+
+    // const data = values
   };
 
   const handleShowThankYou = () => {
     setThankYou(true);
   };
   const handleCloseThankYou = () => {
+    setValues({
+      firstname: '',
+      lastname: '',
+      email: '',
+      message: '',
+    });
     setThankYou(false);
   };
   return (
@@ -73,7 +84,8 @@ const ContactForm = () => {
                 name="firstname"
                 placeholder="First Name"
                 onChange={handleChange}
-                value={formValue.firstname}
+                value={values.firstname}
+                required
               />
             </div>
             <div>
@@ -86,7 +98,8 @@ const ContactForm = () => {
                 name="lastname"
                 placeholder="Last Name"
                 onChange={handleChange}
-                value={formValue.lastname}
+                value={values.lastname}
+                required
               />
             </div>
 
@@ -100,7 +113,8 @@ const ContactForm = () => {
                 name="email"
                 placeholder="Email"
                 onChange={handleChange}
-                value={formValue.email}
+                value={values.email}
+                required
               />
             </div>
             <div>
@@ -110,8 +124,9 @@ const ContactForm = () => {
               <Textarea
                 placeholder="Message"
                 name="message"
-                value={formValue.message}
+                value={values.message}
                 onChange={handleChange}
+                required
               />
             </TextAreaWrapper>
           </StyleForm>
