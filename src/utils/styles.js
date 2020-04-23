@@ -155,6 +155,7 @@ export const ProjectsWrapper = styled.section`
 `;
 
 export const ProjectDetailWrapper = styled.div`
+  padding-top: 10px;
   width: 100%;
   margin-bottom: 40px;
 `;
@@ -611,7 +612,7 @@ export const BackButton = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
+
   margin-left: 30px;
   cursor: pointer;
 

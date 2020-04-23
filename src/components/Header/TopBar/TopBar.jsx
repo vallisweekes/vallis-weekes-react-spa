@@ -32,9 +32,9 @@ const TopBar = () => {
       <BurgerMenu onClick={handleSideBarOpen}>
         <MenuIcon />
       </BurgerMenu>
-      <section id="sideBar-fix">
-        {sideBar ? <SideMenu showSideBar={sideBar} /> : null}
-      </section>
+
+      {sideBar ? <SideMenu showSideBar={sideBar} /> : null}
+
       <Logo />
       <NavBar />
       <SocialIcon />

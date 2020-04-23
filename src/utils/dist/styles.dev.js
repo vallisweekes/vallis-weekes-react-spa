@@ -24,7 +24,7 @@ function _templateObject62() {
 }
 
 function _templateObject61() {
-  var data = _taggedTemplateLiteral(["\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  margin-top: 10px;\n  margin-left: 30px;\n  cursor: pointer;\n\n  width: 40px;\n  height: 40px;\n  border-radius: 50px;\n  transition: all 1s linear;\n\n  :hover {\n    background-color: #f3f5f7;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  display: flex;\n  justify-content: center;\n  align-items: center;\n\n  margin-left: 30px;\n  cursor: pointer;\n\n  width: 40px;\n  height: 40px;\n  border-radius: 50px;\n  transition: all 1s linear;\n\n  :hover {\n    background-color: #f3f5f7;\n  }\n"]);
 
   _templateObject61 = function _templateObject61() {
     return data;
@@ -494,7 +494,7 @@ function _templateObject15() {
 }
 
 function _templateObject14() {
-  var data = _taggedTemplateLiteral(["\n  width: 100%;\n  margin-bottom: 40px;\n"]);
+  var data = _taggedTemplateLiteral(["\n  padding-top: 10px;\n  width: 100%;\n  margin-bottom: 40px;\n"]);
 
   _templateObject14 = function _templateObject14() {
     return data;
