@@ -294,7 +294,7 @@ function _templateObject35() {
 }
 
 function _templateObject34() {
-  var data = _taggedTemplateLiteral(["\n  position: relative;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  margin: 0 auto;\n  width: 70%;\n  height: 100%;\n  margin-bottom: 10px;\n"]);
+  var data = _taggedTemplateLiteral(["\n  position: relative;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  margin: 0 auto;\n  width: 300px;\n  height: 100%;\n  margin-bottom: 10px;\n"]);
 
   _templateObject34 = function _templateObject34() {
     return data;

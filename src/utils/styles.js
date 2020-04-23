@@ -393,7 +393,7 @@ export const ContactContainer = styled.div`
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  width: 70%;
+  width: 300px;
   height: 100%;
   margin-bottom: 10px;
 `;
