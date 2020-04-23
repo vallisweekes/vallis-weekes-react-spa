@@ -1,11 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { sideBarControl, LinkUl, LinkItem } from '../utils/styles';
 
-const SideBar = ({ showSideBar }) => {
-  const SideBarController = sideBarControl(showSideBar);
+import { LinkUl, LinkItem } from '../utils/styles';
+
+const SideBar = ({ handleSideBarClose }) => {
   return (
-    <SideBarController>
+    <div>
+      <div className="close-btn" onClick={handleSideBarClose}>
+        <div>&times;</div>
+      </div>
       <LinkUl>
         <LinkItem>
           <Link to="/" style={{ color: '#ffffff' }}>
@@ -28,7 +31,7 @@ const SideBar = ({ showSideBar }) => {
           </Link>
         </LinkItem>
       </LinkUl>
-    </SideBarController>
+    </div>
   );
 };
 

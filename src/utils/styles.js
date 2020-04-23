@@ -49,7 +49,7 @@ export const BurgerMenu = styled.div`
 `;
 
 export const HeaderLogo = styled.div`
-  margin-left: 10px;
+  margin-left: 20px;
 `;
 
 export const IntroWrapper = styled.div`
@@ -258,28 +258,6 @@ export const IconHolder = styled.div`
   }
 `;
 
-//Slider Open Animation
-
-const slideropen = keyframes`
-from {
-
-left: -250px
-}
-to {
-  left:0
-  
-}
-`;
-
-const sliderclose = keyframes`
-from {
-left: 0
-}
-to {
-  left: -250px;
-}
-`;
-
 //Sidebar
 
 export const sideBarControl = (showSideBar) => {
@@ -296,7 +274,6 @@ export const sideBarControl = (showSideBar) => {
     font-family: 'Kanit', sans-serif;
 
     color: #ffffff;
-    animation: ${showSideBar ? slideropen : sliderclose} 0.5s linear both;
   `;
 };
 
@@ -318,26 +295,6 @@ export const LinkItem = styled.li`
   transition: all 1s linear;
   :hover {
     background-color: rgba(33, 33, 33, 0.77);
-  }
-`;
-export const CloseButton = styled.li`
-  position: absolute;
-  top: 5px;
-  left: 10rem;
-  z-index: 300;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 30px;
-  height: 30px;
-  border-radius: 50px;
-  font-size: 25px;
-  margin-left: 50px;
-  color: #fff;
-
-  :hover {
-    background-color: rgba(59, 59, 59, 0.7);
-    cursor: pointer;
   }
 `;
 

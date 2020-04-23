@@ -2,38 +2,34 @@ import React, { useState } from 'react';
 import Logo from './Logo';
 import NavBar from './NavBar';
 import SideMenu from '../../SideMenu';
+import Backdrop from '../../shared/Backdrop';
 import SocialIcon from './SocialIcon';
 import MenuIcon from '@material-ui/icons/Menu';
-import {
-  TopBarContainer,
-  BurgerMenu,
-  CloseButton,
-} from '../../../utils/styles';
+import { TopBarContainer, BurgerMenu } from '../../../utils/styles';
+import './sidebar.css';
 
 const TopBar = () => {
   const [sideBar, setSideBar] = useState(false);
-  const [showClose, setShowClose] = useState(false);
+  // const [showClose, setShowClose] = useState(false);
 
   const handleSideBarOpen = () => {
     setSideBar(true);
-    setShowClose(true);
+    // setShowClose(true);
   };
 
   const handleSideBarClose = () => {
     setSideBar(false);
-    setShowClose(false);
+    // setShowClose(false);
   };
   return (
     <TopBarContainer>
-      {showClose ? (
-        <CloseButton onClick={handleSideBarClose}>&times;</CloseButton>
-      ) : null}
-
+      {sideBar ? <Backdrop handleSideBarClose={handleSideBarClose} /> : null}
       <BurgerMenu onClick={handleSideBarOpen}>
         <MenuIcon />
       </BurgerMenu>
-
-      {sideBar ? <SideMenu showSideBar={sideBar} /> : null}
+      <section className={sideBar ? 'sidebar sidebar-open' : 'sidebar '}>
+        <SideMenu handleSideBarClose={handleSideBarClose} />
+      </section>
 
       <Logo />
       <NavBar />
