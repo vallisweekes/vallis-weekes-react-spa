@@ -1,5 +1,5 @@
 import React from 'react';
-
+import PropTypes from 'prop-types';
 import { Card, CardContainer, ImageHolder } from '../../../utils/styles';
 
 const Project = (props) => {
@@ -15,4 +15,7 @@ const Project = (props) => {
   );
 };
 
+Project.prototype = {
+  image: PropTypes.string,
+};
 export default Project;

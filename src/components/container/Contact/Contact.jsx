@@ -2,7 +2,7 @@ import React from 'react';
 import ContactForm from './Form/Form';
 const Contact = () => {
   return (
-    <div>
+    <div style={{ width: '100%' }}>
       <ContactForm />
     </div>
   );
