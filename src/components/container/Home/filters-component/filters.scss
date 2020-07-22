@@ -1,0 +1,16 @@
+.filters-wrapper {
+	display: flex;
+	min-width: 300px;
+	justify-content: space-between;
+	padding-top: 2rem;
+
+	li {
+		padding: 0.5rem 1.5rem;
+		text-transform: uppercase;
+		cursor: pointer;
+		border-radius: 2px;
+	}
+}
+.active-filter {
+	background-color: rgba(237, 237, 237, 0.68);
+}

@@ -1,45 +1,68 @@
 {
-    "results": [{
-            "_id": 1,
-            "title": "Restaraunt Review",
-            "image": "http://www.vallisweekes.com/portfolio_assets/restaraunt_review_thumb.png",
-            "stack": "React | CSS | HTML5",
-            "url": "https://vw-restaurant-review.netlify.app"
-        },
-        {
-            "_id": 2,
-            "title": "Voyage",
-            "image": "http://www.vallisweekes.com/portfolio_assets/voyage_thumb.png",
-            "stack": "HTML5 | CSS",
-            "url": "https://www.vallisweekes.com/portfolio/voyage_proto"
-        },
-        {
-            "_id": 3,
-            "title": "Mushroom Vs Sonic",
-            "image": "http://www.vallisweekes.com/portfolio_assets/mushroom_sonic_thumb.png",
-            "stack": "HTML5 | CSS3",
-            "url": "https://mushoom-vs-sonic-game.netlify.app/"
-        },
-        {
-            "_id": 4,
-            "title": "Film Festival",
-            "image": "http://www.vallisweekes.com/portfolio_assets/film_fest2_thumb.png",
-            "stack": "HTML5 | CSS3",
-            "url": "https://www.vallisweekes.com/portfolio/film_festival_project/"
-        },
-        {
-            "_id": 5,
-            "title": "Coach Dorrette Harris",
-            "image": "http://www.vallisweekes.com/portfolio_assets/coach_dorrette_Harris.png",
-            "stack": "WordPress| CSS | HTML5",
-            "url": "https://coachdorretteharris.com"
-        },
-        {
-            "_id": 6,
-            "title": "ShakerHD Production",
-            "image": "http://www.vallisweekes.com/portfolio_assets/shakerhdpro_thumb.png",
-            "stack": "WordPress | CSS | HTML5 ",
-            "url": "https://shakerhdproductions.com"
-        }
-    ]
+	"results": [
+		{
+			"_id": 1,
+			"title": "Zoopla Clone",
+			"image": "/zoopla-clone-thumb.png",
+			"stack": "React | HTML5 | CSS ",
+			"url": "https://zoopla-clone.netlify.app",
+			"category": "React-JS"
+		},
+		{
+			"_id": 2,
+			"title": "Keppi's Rotti",
+			"image": "/keppis-web.png",
+			"stack": "React | Redux | CSS | HTML5 | Node ",
+			"url": "https://keppis-roti.netlify.app",
+			"category": "React-JS"
+		},
+		{
+			"_id": 3,
+			"title": "Restaraunt Review",
+			"image": "http://www.vallisweekes.com/portfolio_assets/restaraunt_review_thumb.png",
+			"stack": "React | CSS | HTML5",
+			"url": "https://vw-restaurant-review.netlify.app",
+			"category": "React-JS"
+		},
+		{
+			"_id": 4,
+			"title": "Voyage",
+			"image": "/voyage-thumb.png",
+			"stack": "HTML5 | CSS",
+			"url": "https://www.vallisweekes.com/portfolio/voyage_proto",
+			"category": "Html/Css"
+		},
+		{
+			"_id": 5,
+			"title": "Mushroom Vs Sonic",
+			"image": "http://www.vallisweekes.com/portfolio_assets/mushroom_sonic_thumb.png",
+			"stack": "HTML5 | CSS3",
+			"url": "https://mushoom-vs-sonic-game.netlify.app/",
+			"category": "jquery"
+		},
+		{
+			"_id": 6,
+			"title": "Film Festival",
+			"image": "/film-festival-thumb.png",
+			"stack": "HTML5 | CSS3",
+			"url": "https://www.vallisweekes.com/portfolio/film_festival_project/",
+			"category": "jquery"
+		},
+		{
+			"_id": 7,
+			"title": "Coach Dorrette Harris",
+			"image": "/cdh-thumb.png",
+			"stack": "WordPress | CSS | HTML5",
+			"url": "https://coachdorretteharris.com",
+			"category": "Wordpress"
+		},
+		{
+			"_id": 8,
+			"title": "ShakerHD Production",
+			"image": "/shaker-production-thumb.png",
+			"stack": "WordPress | CSS | HTML5 ",
+			"url": "https://shakerhdproductions.com",
+			"category": "Wordpress"
+		}
+	]
 }
