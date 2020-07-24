@@ -5,6 +5,7 @@ import { results } from '../../../db/projects.json';
 import { ProjectsContainer, ProjectsWrapper, SectionHeading } from '../../../utils/styles';
 import Filters from './filters-component/Filters';
 
+const category = ['ALL', 'React-JS', 'jquery', 'Html/Css', 'Wordpress'];
 const Projects = () => {
 	const [active, setActive] = useState('');
 
@@ -21,15 +22,15 @@ const Projects = () => {
 		if (active === 'all') return results;
 		else return project.category.toLowerCase() === active;
 	});
-	console.log('filtered', filterProjects);
+
 	return (
 		<section>
 			<ProjectsContainer>
 				<SectionHeading>
 					<h2>Projects</h2>
 				</SectionHeading>
-				<p>View some of my work here</p>
-				<Filters active={active} onFilter={handleFilter} />
+				<p style={{ fontSize: '2rem' }}>View some of my work here</p>
+				<Filters active={active} onFilter={handleFilter} category={category} />
 				<ProjectsWrapper>
 					{filterProjects.map((p) => (
 						<Card key={p._id} image={p.image} project={p} />

@@ -1,36 +1,49 @@
 import React from 'react';
 
 import Skill from './skill-component/Skill';
-import { SectionHeading } from '../../../../utils/styles';
+import skillsData from '../../../../db/skillsData.json';
+import { SectionHeading, SkillsFilter } from '../../../../utils/styles';
 import './skills-container.styles.scss';
+import Filters from '../filters-component/Filters';
 
-const skills = [
-	{ id: 1, title: 'Javascript', score: 70 },
-	{ id: 2, title: 'React', score: 60 },
-	{ id: 3, title: 'jQuery', score: 60 },
-	{ id: 4, title: 'HTML', score: 80 },
-	{ id: 5, title: 'CSS', score: 70 },
-	{ id: 6, title: 'Node', score: 40 },
-	{ id: 7, title: 'Wordpress', score: 70 },
-];
+const category = ['Front End', 'Back End', 'Tools'];
+
 interface SkillsContainerProps {}
 
 type Skill = {
 	id: number;
 	title: string;
 	score: number;
+	category: string;
 };
 
 const SkillsContainer: React.FC<SkillsContainerProps> = () => {
+	const [active, setActive] = React.useState('');
+
+	React.useEffect(() => {
+		setActive('front end');
+	}, []);
+
+	const handleFilter = (cat: string) => {
+		let category = cat.toLowerCase();
+		setActive(category);
+	};
+
+	const filterSkills = skillsData.skills.filter((skill) => {
+		if (active === 'front end') return skill.category.toLowerCase() === active;
+		else return skill.category.toLowerCase() === active;
+	});
+
 	return (
 		<section className='skills-main-wrap'>
 			<div className='skills-container'>
 				<SectionHeading>
 					<h2>Skills</h2>
 				</SectionHeading>
-				{skills.map((skill: Skill) => (
-					<Skill title={skill.title} score={skill.score} />
-				))}
+				<SkillsFilter>
+					<Filters active={active} onFilter={handleFilter} category={category} />
+				</SkillsFilter>
+				{filterSkills && filterSkills.map((skill: Skill) => <Skill title={skill.title} score={skill.score} />)}
 			</div>
 		</section>
 	);

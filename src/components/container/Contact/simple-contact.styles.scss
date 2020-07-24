@@ -1,0 +1,16 @@
+.simple-contact {
+    width: 100%;
+    .simple-contact-inner {
+        width: 80%;
+        padding: 5rem;
+        max-width: 800px;
+        margin: 0 auto;
+        h1 {
+            font-weight: bolder;
+            font-size: 2rem;
+        }
+        h3 {
+            padding: 10px;
+        }
+    }
+}

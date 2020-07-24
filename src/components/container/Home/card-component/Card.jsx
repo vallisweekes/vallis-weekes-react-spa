@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { CardContainer } from '../../../../utils/styles';
 import './card.styles.scss';
 
-const Card = ({ image, project: { title, stack, _id } }) => {
+const Card = ({ image, project: { title, stack, _id, git_repo } }) => {
 	return (
 		<CardContainer>
 			<div className='card'>
@@ -20,6 +20,19 @@ const Card = ({ image, project: { title, stack, _id } }) => {
 			</div>
 			<ul>
 				<li>{stack}</li>
+
+				<li className='card-content-git'>
+					{git_repo ? (
+						<>
+							<img src='/github.svg' alt='github' />
+							<span>
+								<a href={git_repo}>GitHub Repository</a>
+							</span>{' '}
+						</>
+					) : (
+						<span className='private'>Private</span>
+					)}
+				</li>
 			</ul>
 		</CardContainer>
 	);

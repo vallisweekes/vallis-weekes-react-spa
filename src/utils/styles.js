@@ -6,7 +6,7 @@ export const HeaderWrapper = styled.header`
 	flex-direction: column;
 	justify-content: flex-end;
 	width: 100%;
-	height: 450px;
+	height: 650px;
 	border-bottom: 2px solid rgb(234, 234, 234);
 
 	@media only screen and (min-width: 600px) {
@@ -30,7 +30,7 @@ export const TopBarContainer = styled.div`
 	position: fixed;
 	top: 0;
 	width: 100%;
-	z-index: 3;
+	z-index: 5;
 	background-color: #ffffff;
 `;
 
@@ -56,10 +56,18 @@ export const BurgerMenu = styled.div`
 
 export const HeaderLogo = styled.div`
 	margin-left: 20px;
+	@media only screen and (max-width: 400px) {
+		font-size: 0.7rem;
+	}
+	@media only screen and (max-width: 500px) {
+		font-size: 0.6rem;
+	}
 `;
 
 export const IntroWrapper = styled.div`
 	@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@100&display=swap');
+	position: relative;
+	z-index: 3;
 	height: 100%;
 	display: flex;
 	flex-direction: column;
@@ -108,10 +116,16 @@ export const HeaderIntro = styled.div`
 	font-family: 'Raleway', sans-serif;
 	letter-spacing: 3;
 	font-size: 35px;
+
 	@media only screen and (min-width: 600px) {
 		font-size: 50px;
 		letter-spacing: 6;
 	}
+`;
+
+export const HeaderSoftSkills = styled.section`
+	width: 100%;
+	height: 150px;
 `;
 
 export const SubTextWrapper = styled.div`
@@ -150,9 +164,6 @@ export const ProjectsContainer = styled.section`
 	height: auto;
 	margin: 0 auto;
 	max-width: 1200px;
-	p {
-		font-family: 1rem;
-	}
 `;
 
 export const ProjectsWrapper = styled.section`
@@ -210,18 +221,18 @@ export const Nav = styled.ul`
 	@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
 	display: none;
 	justify-content: space-between;
-	width: 400px;
+	width: 300px;
 	margin-left: 6rem;
 	font-family: 'Nunito', sans-serif;
 
 	@media only screen and (min-width: 768px) {
 		display: flex;
+		justify-content: space-evenly;
 	}
 `;
 
 export const SocialIconWrapper = styled.div`
 	display: flex;
-	justify-content: flex-end;
 `;
 export const IconHolder = styled.div`
 	display: flex;
@@ -237,9 +248,9 @@ export const IconHolder = styled.div`
 	transition: all 0.2s ease-in;
 	cursor: pointer;
 
-	:hover {
+	${'' /* :hover {
 		background-color: #f3f5f7;
-	}
+	} */}
 `;
 
 //Sidebar
@@ -282,6 +293,26 @@ export const LinkItem = styled.li`
 	}
 `;
 
+// SKILLS
+
+export const SkillsFilter = styled.section`
+	display: flex;
+	justify-content: flex-end;
+	width: 100%;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	ul {
+		width: 300px;
+		li {
+			font-size: 0.8rem;
+			padding: 10px;
+		}
+	}
+	@media (min-width: 600px) {
+		width: 70%;
+	}
+`;
+
 //Homepage About Me Section
 
 export const AboutWrapper = styled.div`
@@ -289,23 +320,23 @@ export const AboutWrapper = styled.div`
 	margin: 0 auto;
 	display: flex;
 	flex-wrap: wrap;
-	height: 600px;
-	margin-bottom: 5rem;
+	height: auto;
+
 	max-width: 1200px;
 	padding: 4rem 0;
 	background-size: cover;
 	background-repeat: no-repeat;
 	@media only screen and (min-width: 768px) {
 		height: 600px;
+		margin-bottom: 5rem;
 	}
 `;
 
 export const AboutMeRight = styled.div`
 	background: url('about_me_1.jpg') center no-repeat;
-
 	background-size: cover;
 	width: 100%;
-	/* margin-bottom: 10px; */
+	height: 375px;
 	object-fit: cover;
 	@media only screen and (min-width: 768px) {
 		margin-bottom: 0;
@@ -414,7 +445,8 @@ export const FooterWrapper = styled.footer`
 	width: 100%;
 	border-top: 1px solid rgb(234, 234, 234);
 	height: 60px;
-	background-color: #fafafa;
+	${'' /* background-color: #fafafa; */}
+	background-image: linear-gradient(to top, #d5d4d0 0%, #d5d4d0 1%, #eeeeec 31%, #efeeec 75%, #e9e9e7 100%);
 `;
 
 export const FooterContent = styled.div`
@@ -428,7 +460,7 @@ export const FooterContentWrapper = styled.div`
 
 	@media only screen and (min-width: 600px) {
 		p {
-			font-size: 1.1rem;
+			font-size: 0.9rem;
 		}
 	}
 `;

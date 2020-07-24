@@ -70,3 +70,45 @@
 	color: #000000;
 	box-sizing: border-box;
 }
+.card-content-git {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	margin-top: 10px;
+	width: 200px;
+	height: 30px;
+	box-sizing: border-box;
+	img {
+		width: 25px;
+		height: 25px;
+		margin-right: 10px;
+	}
+
+	a {
+		color: #000000;
+		font-weight: 700;
+	}
+	a:hover {
+		text-decoration: underline;
+	}
+	.private {
+		background-color: #636363;
+		position: relative;
+		color: #ffffff;
+		display: flex;
+		width: 80px;
+		justify-content: center;
+		font-weight: 600;
+
+		&::after {
+			position: absolute;
+			bottom: 0;
+			top: 0;
+			left: 0;
+			right: 0;
+			content: "";
+			border-left: 20px solid #f9f9f9;
+			border-bottom: 20px solid transparent;
+		}
+	}
+}

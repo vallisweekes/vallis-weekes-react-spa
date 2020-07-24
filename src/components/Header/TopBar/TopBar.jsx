@@ -9,33 +9,33 @@ import { TopBarContainer, BurgerMenu } from '../../../utils/styles';
 import './sidebar.css';
 
 const TopBar = () => {
-  const [sideBar, setSideBar] = useState(false);
-  // const [showClose, setShowClose] = useState(false);
+	const [sideBar, setSideBar] = useState(false);
+	// const [showClose, setShowClose] = useState(false);
 
-  const handleSideBarOpen = () => {
-    setSideBar(true);
-    // setShowClose(true);
-  };
+	const handleSideBarOpen = () => {
+		setSideBar(true);
+		// setShowClose(true);
+	};
 
-  const handleSideBarClose = () => {
-    setSideBar(false);
-    // setShowClose(false);
-  };
-  return (
-    <TopBarContainer>
-      {sideBar ? <Backdrop handleSideBarClose={handleSideBarClose} /> : null}
-      <BurgerMenu onClick={handleSideBarOpen}>
-        <MenuIcon />
-      </BurgerMenu>
-      <section className={sideBar ? 'sidebar sidebar-open' : 'sidebar '}>
-        <SideMenu handleSideBarClose={handleSideBarClose} />
-      </section>
+	const handleSideBarClose = () => {
+		setSideBar(false);
+		// setShowClose(false);
+	};
+	return (
+		<TopBarContainer>
+			{sideBar ? <Backdrop handleSideBarClose={handleSideBarClose} /> : null}
+			<BurgerMenu onClick={handleSideBarOpen}>
+				<MenuIcon />
+			</BurgerMenu>
+			<section className={sideBar ? 'sidebar sidebar-open' : 'sidebar '}>
+				<SideMenu handleSideBarClose={handleSideBarClose} />
+			</section>
 
-      <Logo />
-      <NavBar />
-      <SocialIcon />
-    </TopBarContainer>
-  );
+			<Logo />
+			<NavBar />
+			<SocialIcon invert={false} />
+		</TopBarContainer>
+	);
 };
 
 export default TopBar;

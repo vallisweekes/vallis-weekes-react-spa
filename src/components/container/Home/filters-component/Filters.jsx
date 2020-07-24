@@ -1,8 +1,7 @@
 import React from 'react';
 import './filters.scss';
 
-const Filters = ({ onFilter, active }) => {
-	const category = ['ALL', 'React-JS', 'jquery', 'Html/Css'];
+const Filters = ({ onFilter, active, category }) => {
 	return (
 		<ul className='filters-wrapper'>
 			{category.map((cat, i) => (

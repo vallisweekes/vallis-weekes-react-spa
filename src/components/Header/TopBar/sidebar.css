@@ -1,48 +1,59 @@
 .sidebar {
-    height: 100vh;
-    position: fixed;
-
-    top: 0;
-    left: 0;
-    width: 70%;
-    max-width: 300px;
-    background-color: #111;
-    overflow-x: hidden;
-    padding-top: 60px;
-    font-family: "Kanit", sans-serif;
-    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.399);
-    transform: translateX(-100%);
-    transition: transform 0.8s ease-out;
-    z-index: 200;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 80%;
+	max-width: 400px;
+	background-color: #111;
+	overflow-x: hidden;
+	padding-top: 7rem;
+	font-family: 'Kanit', sans-serif;
+	box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.399);
+	transform: translateX(-100%);
+	transition: transform 0.8s ease-out;
+	z-index: 200;
 }
 
 .sidebar-open {
-    transform: translateX(0);
+	transform: translateX(0);
+	height: 100%;
 }
 
 .close-btn {
-    position: absolute;
-    top: 1.5rem;
-    left: 12.5rem;
-    z-index: 300;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 35px;
-    height: 35px;
-    border-radius: 50px;
-    font-size: 30px;
-    margin-left: 50px;
-    color: #fff;
-    /* background-color: rgba(59, 59, 59, 0.7); */
+	position: absolute;
+	top: 1.5rem;
+	left: 11.5rem;
+	z-index: 300;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 35px;
+	height: 35px;
+	border-radius: 50px;
+	font-size: 30px;
+	margin-left: 50px;
+	color: #fff;
+	/* background-color: rgba(59, 59, 59, 0.7); */
 }
 
 .close-btn div {
-    display: block;
-    padding-bottom: 6px;
+	display: block;
+	padding-bottom: 6px;
 }
 
 .close-btn:hover {
-    background-color: rgba(59, 59, 59, 0.7);
-    cursor: pointer;
+	background-color: rgba(59, 59, 59, 0.7);
+	cursor: pointer;
+	transform: rotate(90deg);
+	animation: rotate 0.2s linear both;
+}
+
+@keyframes rotate {
+	from {
+		transform: rotate(90deg);
+	}
+	to {
+		transform: rotate(180deg);
+	}
 }
