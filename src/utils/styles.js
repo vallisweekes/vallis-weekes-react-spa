@@ -304,7 +304,7 @@ export const SkillsFilter = styled.section`
 	ul {
 		width: 300px;
 		li {
-			font-size: 0.8rem;
+			font-size: 0.7rem;
 			padding: 10px;
 		}
 	}
