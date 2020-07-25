@@ -14,8 +14,7 @@ const Header = () => {
 					<img style={{ width: '100%' }} src='/web-hero-image_cut.png' alt='hero' />
 				</section>
 				<Intro />
-				{/* <Softskills /> */}
-				{/* <HeaderStrapLine /> */}
+				<HeaderStrapLine />
 			</HeaderWrapper>
 		</section>
 	);

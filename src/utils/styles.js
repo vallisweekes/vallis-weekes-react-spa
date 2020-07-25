@@ -26,7 +26,7 @@ export const TopBarContainer = styled.div`
 	position: fixed;
 	top: 0;
 	width: 100%;
-	z-index: 5;
+	z-index: 10;
 	background-color: #ffffff;
 `;
 
@@ -57,6 +57,16 @@ export const HeaderLogo = styled.div`
 	}
 	@media only screen and (max-width: 500px) {
 		font-size: 0.6rem;
+	}
+`;
+
+export const InvertedLogo = styled.div`
+	width: 100%;
+	text-align: center;
+
+	margin-bottom: 4rem;
+	h3 {
+		color: #ffffff;
 	}
 `;
 
@@ -450,7 +460,7 @@ export const FooterWrapper = styled.footer`
 	height: 60px;
 	${'' /* background-color: #fafafa; */}
 	background-image: linear-gradient(to top, #d5d4d0 0%, #d5d4d0 1%, #eeeeec 31%, #efeeec 75%, #e9e9e7 100%);
-	z-index: 4;
+	z-index: 9;
 `;
 
 export const FooterContent = styled.div`

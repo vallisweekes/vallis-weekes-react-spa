@@ -1,15 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
-import { LinkUl, LinkItem } from '../utils/styles';
+import LogoInverted from '../components/LogoInverted';
 import SocialIcon from './Header/TopBar/SocialIcon';
 
+import { LinkUl, LinkItem } from '../utils/styles';
 const SideBar = ({ handleSideBarClose }) => {
 	return (
 		<div>
 			<div className='close-btn' onClick={handleSideBarClose}>
 				<div>&times;</div>
 			</div>
+			<LogoInverted />
 			<LinkUl>
 				<LinkItem>
 					<Link to='/' style={{ color: '#ffffff' }}>
