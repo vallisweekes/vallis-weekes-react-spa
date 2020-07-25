@@ -6,7 +6,7 @@ import Backdrop from '../../shared/Backdrop';
 import SocialIcon from './SocialIcon';
 import MenuIcon from '@material-ui/icons/Menu';
 import { TopBarContainer, BurgerMenu } from '../../../utils/styles';
-import './sidebar.css';
+import './sidebar.scss';
 
 const TopBar = () => {
 	const [sideBar, setSideBar] = useState(false);

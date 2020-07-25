@@ -2,6 +2,7 @@ import React from 'react';
 import TopBar from './TopBar/TopBar';
 import Intro from './Intro';
 import { HeaderWrapper } from '../../utils/styles';
+import HeaderStrapLine from './header-strapline-component/HeaderStrapLine';
 // import Softskills from './Softskills';
 
 const Header = () => {
@@ -14,6 +15,7 @@ const Header = () => {
 				</section>
 				<Intro />
 				{/* <Softskills /> */}
+				{/* <HeaderStrapLine /> */}
 			</HeaderWrapper>
 		</section>
 	);

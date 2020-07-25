@@ -1,6 +1,8 @@
 import React, { Fragment } from 'react';
-import Layout from '../src/components/Layout';
 import { BrowserRouter } from 'react-router-dom';
+
+import Layout from '../src/components/Layout';
+
 import './App.scss';
 
 const App = () => {

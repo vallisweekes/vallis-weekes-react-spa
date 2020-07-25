@@ -13,7 +13,7 @@
 			"_id": 2,
 			"title": "Keppi's Roti",
 			"image": "/keppis-web.png",
-			"stack": "React | Redux | Typescript | SASS | HTML5 | Node ",
+			"stack": "React | Redux | Typescript | SASS | HTML5 | Express | MongoDB",
 			"url": "https://keppis-roti.netlify.app",
 			"git_repo": "",
 			"category": "React-JS"

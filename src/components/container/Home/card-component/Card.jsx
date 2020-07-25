@@ -19,7 +19,7 @@ const Card = ({ image, project: { title, stack, _id, git_repo } }) => {
 				</div>
 			</div>
 			<ul>
-				<li>{stack}</li>
+				<li className='stack'>{stack}</li>
 
 				<li className='card-content-git'>
 					{git_repo ? (

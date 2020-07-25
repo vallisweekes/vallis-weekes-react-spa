@@ -1,7 +1,6 @@
 .card {
 	position: relative;
 	overflow: hidden;
-
 	margin: 20px 0;
 }
 
@@ -57,6 +56,9 @@
 	}
 }
 
+.stack {
+	font-size: 0.9rem;
+}
 .card-view-project {
 	margin-top: 1rem;
 	display: flex;

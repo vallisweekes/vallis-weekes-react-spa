@@ -6,12 +6,8 @@ export const HeaderWrapper = styled.header`
 	flex-direction: column;
 	justify-content: flex-end;
 	width: 100%;
-	height: 650px;
+	height: 675px;
 	border-bottom: 2px solid rgb(234, 234, 234);
-
-	@media only screen and (min-width: 600px) {
-		height: 60vh;
-	}
 `;
 
 export const SectionHeading = styled.section`
@@ -192,20 +188,27 @@ export const ProjectDetailWrapper = styled.div`
 `;
 
 export const ProjectDetailInner = styled.div`
-	width: 60%;
+	${'' /* width: 60%; */}
 	margin: 0 auto;
 	padding: 2rem;
 `;
 
 export const ProjectDetailHeader = styled.div`
-	margin-bottom: 1rem;
+	margin: 1rem 0;
+`;
+
+export const SectionPara = styled.p`
+	font-size: 1rem;
+	@media (min-width: 600px) {
+		font-size: 1.3rem;
+	}
 `;
 
 export const ProjectDetailImage = styled.div`
 	width: 100%;
 
 	@media only screen and (min-width: 600px) {
-		width: 500px;
+		max-width: 800px;
 	}
 `;
 export const CardContainer = styled.section`
@@ -447,6 +450,7 @@ export const FooterWrapper = styled.footer`
 	height: 60px;
 	${'' /* background-color: #fafafa; */}
 	background-image: linear-gradient(to top, #d5d4d0 0%, #d5d4d0 1%, #eeeeec 31%, #efeeec 75%, #e9e9e7 100%);
+	z-index: 4;
 `;
 
 export const FooterContent = styled.div`
@@ -469,13 +473,14 @@ export const FooterMenu = styled.ul`
 	@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
 	display: flex;
 	justify-content: space-evenly;
-	width: 200px;
-	margin-right: 2rem;
+	width: 100px;
+
 	font-family: 'Nunito', sans-serif;
 	font-size: 7.5px;
 	@media only screen and (min-width: 600px) {
 		font-size: 1rem;
 		width: 300px;
+		margin-right: 2rem;
 	}
 `;
 
@@ -583,7 +588,7 @@ export const ModalClass = (status) => {
 
 export const BackButton = styled.div`
 	position: absolute;
-	left: 5rem;
+
 	display: flex;
 	justify-content: center;
 	align-items: center;

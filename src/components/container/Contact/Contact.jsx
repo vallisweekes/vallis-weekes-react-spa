@@ -1,10 +1,12 @@
 import React from 'react';
-// import ContactForm from './Form/Form';
+import { ProjectProvider } from '../../../context/ProjectContext';
 import Simple from './Simple';
 const Contact = () => {
 	return (
 		<div style={{ width: '100%' }}>
-			<Simple />
+			<ProjectProvider>
+				<Simple />
+			</ProjectProvider>
 		</div>
 	);
 };

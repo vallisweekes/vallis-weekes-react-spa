@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Meera+Inimai&display=swap');
+
+.header-strapline-container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 250px;
+    height: 100px;
+    right: 0;
+    z-index: 2;
+    bottom: 3rem;
+    border-radius: 3px;
+    background-color: rgba(241, 241, 241, 0.906);
+
+    @media(min-width: 960px) {
+        left: 0;
+        width: 300px;
+    }
+
+    .header-strapline-wrapper {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        right: 2rem;
+        // background-color: rgb(255, 255, 255);
+
+        width: 100%;
+        height: 80%;
+
+        @media(min-width: 960px) {
+            left: 3rem;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+        }
+    }
+}
+
+div.header-strapline-button {
+    width: 45px;
+    height: 45px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    box-shadow: 2px 0px 5px 2px rgba(230, 230, 230, 0.81);
+    cursor: pointer;
+
+    img {
+        width: 30%;
+
+        @media(min-width: 960px) {
+            transform: rotate(180deg);
+        }
+    }
+}
+
+.header-strapline-carousel {
+    position: relative;
+    overflow: hidden;
+    height: 40px;
+    min-width: 80%;
+    z-index: 5;
+
+    .carousel-text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        background-color: #000000;
+        color: #ffffff;
+        padding: 5px;
+        border-radius: 3px;
+
+        h2 {
+            font-family: 'Meera Inimai', sans-serif;
+            font-weight: bold;
+            font-size: 0.9rem;
+
+            @media(min-width: 960px) {
+                font-size: 1.1rem;
+            }
+        }
+    }
+
+}

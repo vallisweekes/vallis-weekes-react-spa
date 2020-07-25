@@ -8,11 +8,11 @@
 	background-color: #111;
 	overflow-x: hidden;
 	padding-top: 7rem;
-	font-family: 'Kanit', sans-serif;
+	font-family: "Kanit", sans-serif;
 	box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.399);
 	transform: translateX(-100%);
 	transition: transform 0.8s ease-out;
-	z-index: 200;
+	z-index: 600;
 }
 
 .sidebar-open {

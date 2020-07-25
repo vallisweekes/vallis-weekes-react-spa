@@ -43,7 +43,7 @@ const SkillsContainer: React.FC<SkillsContainerProps> = () => {
 				<SkillsFilter>
 					<Filters active={active} onFilter={handleFilter} category={category} />
 				</SkillsFilter>
-				{filterSkills && filterSkills.map((skill: Skill) => <Skill title={skill.title} score={skill.score} />)}
+				{filterSkills && filterSkills.map((skill: Skill) => <Skill key={skill.id} title={skill.title} score={skill.score} />)}
 			</div>
 		</section>
 	);
