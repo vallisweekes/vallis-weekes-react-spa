@@ -33,7 +33,7 @@
 		},
 		{
 			"id": 6,
-			"title": "HTML",
+			"title": "HTML5",
 			"score": 80,
 			"category": "Front End"
 		},
@@ -57,7 +57,7 @@
 		},
 		{
 			"id": 10,
-			"title": "Sass",
+			"title": "Sass/Scss",
 			"score": 60,
 			"category": "Front End"
 		},
@@ -111,27 +111,45 @@
 			"category": "Tools"
 		},
 		{
-			"id": 18,
+			"id": 19,
 			"title": "Adobe XD",
 			"score": 60,
 			"category": "Tools"
 		},
 		{
-			"id": 19,
+			"id": 20,
 			"title": "Photoshop",
 			"score": 80,
 			"category": "Tools"
 		},
 		{
-			"id": 20,
+			"id": 21,
 			"title": "VS Code",
 			"score": 80,
 			"category": "Tools"
 		},
 		{
-			"id": 21,
+			"id": 22,
 			"title": "Git",
 			"score": 65,
+			"category": "Tools"
+		},
+		{
+			"id": 23,
+			"title": "Postman",
+			"score": 65,
+			"category": "Tools"
+		},
+		{
+			"id": 24,
+			"title": "MySQL Workbench",
+			"score": 40,
+			"category": "Tools"
+		},
+		{
+			"id": 25,
+			"title": "CLI",
+			"score": 60,
 			"category": "Tools"
 		}
 	]

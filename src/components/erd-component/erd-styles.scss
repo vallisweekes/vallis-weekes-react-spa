@@ -1,0 +1,40 @@
+.light-box-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.324);
+    height: 100vh;
+    width: 100vw;
+    opacity: 0;
+    z-index: 8;
+    transition: all 2s ease-out;
+    .light-box-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 80%;
+        img {
+            width: 100%;
+            height: 70%;
+        }
+    }
+}
+
+.show {
+    opacity: 0;
+    display: flex;
+    animation: fadein 1s ease-in both;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

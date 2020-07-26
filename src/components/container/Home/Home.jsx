@@ -5,6 +5,7 @@ import Projects from './Projects';
 
 import SkillsContainer from './skills-component/SkillsContainer';
 import Methodologies from '../../methodologies-component/Methodologies';
+import ContentOffset from '../../content-offset-component/ContentOffset';
 const Home = () => {
 	return (
 		<section>
@@ -14,7 +15,7 @@ const Home = () => {
 			</Helmet>
 
 			<Projects />
-
+			<ContentOffset />
 			<SkillsContainer />
 			{/* <AboutMe /> */}
 			<Methodologies />

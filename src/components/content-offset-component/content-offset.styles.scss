@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
+
+$contentHeaderFont: "Krona One",
+sans-serif;
+
+.content-offset-container {
+    width: 100%;
+
+    margin-top: 5rem;
+
+    @media (min-width: 768px) {
+        height: 950px;
+    }
+
+    .content-offset-wrapper {
+        display: grid;
+        width: 90%;
+        max-width: 850px;
+        margin: 0 auto;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 10px;
+        // background-color: rgb(92, 92, 92);
+        height: auto;
+
+        @media (min-width: 768px) {
+            height: 600px;
+            width: 70%;
+        }
+
+        .content-offset-item {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+            margin-bottom: 30px;
+
+            &:last-child {
+                flex-direction: column-reverse;
+            }
+
+            @media (min-width: 768px) {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                column-gap: 30px;
+            }
+
+            .content-offset-image {
+                width: 100%;
+                height: 450px;
+                background-color: rgb(215, 215, 215);
+                overflow: hidden;
+                border-radius: 10px;
+                object-fit: fill;
+                margin-bottom: 10px;
+                mix-blend-mode: difference;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .content-offset-content {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .offset-content-title {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    h2 {
+                        font-size: 1.3rem;
+                        padding-bottom: 10px;
+                    }
+
+                    h3 {
+                        font-family: $contentHeaderFont;
+                        font-size: 1.5rem;
+                        padding-bottom: 10px;
+
+                    }
+
+                    .offset-content-btn {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: #fff;
+                        font-weight: 600;
+                        width: 120px;
+                        height: 40px;
+                        padding: 10px;
+                        background-color: #000;
+                        border-radius: 5px;
+                        box-sizing: border-box;
+                        cursor: pointer;
+
+                        a {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// .item-1 {
+//     background-color: rgb(142, 139, 139);
+// }
+// .item-2 {
+//     background-color: rgb(92, 92, 92);
+//     grid-row-start: 2;
+//     grid-column-end: 3;
+// }

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './header-strapline.styles.scss';
 
-const straps = ['Excellent communication', 'Flexible', 'Collaborative'];
+const straps = ['Excellent communication', 'Flexible', 'Collaborative', 'Creative thinker', 'Innovative'];
 
 const HeaderStrapLine = () => {
 	const [current, setCurrent] = useState(0);

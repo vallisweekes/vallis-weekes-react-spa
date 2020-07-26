@@ -30,7 +30,7 @@
 		{
 			"_id": 4,
 			"title": "Restaurant Review",
-			"image": "/restaraunt_review_thumb.png",
+			"image": "/restaurant_review_thumb.png",
 			"stack": "React | CSS3 | HTML5",
 			"url": "https://vw-restaurants-nearyou.netlify.app",
 			"git_repo": "https://github.com/vallisweekes/restaurant-review-app",
