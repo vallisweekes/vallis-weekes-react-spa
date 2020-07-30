@@ -1,18 +1,21 @@
 import React, { useEffect, useState } from 'react';
+
 import KeyboardBackspaceIcon from '@material-ui/icons/KeyboardBackspace';
+
 import { ProjectDetailWrapper, ProjectDetailInner, ProjectDetailHeader, ProjectDetailImage, BackButton } from '../../../utils/styles';
-import { results } from '../../../db/projects.json';
-const ProjectDetails = ({ match, history }) => {
+
+const ProjectDetails = ({ projects, routeProps: { match, history } }) => {
 	const [project, setProjects] = useState({});
+
 	useEffect(() => {
 		const getProject = () => {
 			if (match.params.id) {
-				const project = results.filter((p) => p._id.toString() === match.params.id);
+				const project = projects && projects.filter((p) => p._id.toString() === match.params.id);
 				setProjects(...project);
 			}
 		};
 		getProject();
-	}, [match.params.id]);
+	}, [match.params.id, projects]);
 
 	const handleBackButton = () => {
 		history.push('/projects');

@@ -4,15 +4,15 @@ import Main from './Main/Main';
 import Footer from './Footer/Footer';
 
 const Layout = () => {
-  return (
-    <StrictMode>
-      <div>
-        <Header />
-        <Main />
-        <Footer />
-      </div>
-    </StrictMode>
-  );
+	return (
+		<StrictMode>
+			<div>
+				<Header />
+				<Main />
+				<Footer />
+			</div>
+		</StrictMode>
+	);
 };
 
 export default Layout;

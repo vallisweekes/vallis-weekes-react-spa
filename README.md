@@ -1,6 +1,7 @@
-# Installation 
+# Installation
 
 ```
 cd client
-npm install 
+npm install
 nom start
+```

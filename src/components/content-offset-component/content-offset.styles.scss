@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
 
-$contentHeaderFont: "Krona One",
-sans-serif;
+$contentHeaderFont: "Krona One", sans-serif;
 
 .content-offset-container {
     width: 100%;
@@ -80,7 +79,6 @@ sans-serif;
                         font-family: $contentHeaderFont;
                         font-size: 1.5rem;
                         padding-bottom: 10px;
-
                     }
 
                     .offset-content-btn {

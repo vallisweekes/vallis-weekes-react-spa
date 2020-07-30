@@ -1,10 +1,25 @@
-// import React, { useState, createContext } from 'react';
-// import projects from '../db/projects.json';
+import React, { useState, createContext, useEffect } from 'react';
+import axios from 'axios';
 
-// export const ProjectContext = createContext();
+export const ProjectContext = createContext();
 
-// export const ProjectProvider = (props) => {
-// 	const [project, setProjects] = useState(projects.results);
-// 	console.log(project);
-// 	return <ProjectContext.Consumer value={project}>{props.children}</ProjectContext.Consumer>;
-// };
+export const ProjectProvider = ({ children }) => {
+	const [project, setProject] = useState();
+	useEffect(() => {
+		const fetchData = async () => {
+			try {
+				const {
+					data: { projects },
+				} = await axios.get('https://vallisweekesapp.herokuapp.com/api/v1/projects');
+				setProject(projects);
+			} catch (error) {
+				console.log(error);
+			}
+		};
+		fetchData();
+	}, []);
+
+	return <ProjectContext.Provider value={project}>{children}</ProjectContext.Provider>;
+};
+
+// https://vallisweekesapp.herokuapp.com/api/v1/skills

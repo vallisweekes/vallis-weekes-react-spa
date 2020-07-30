@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import Card from './card-component/Card';
 
-import { results } from '../../../db/projects.json';
 import { ProjectsContainer, ProjectsWrapper, SectionHeading, SectionPara } from '../../../utils/styles';
 import Filters from './filters-component/Filters';
 
 const category = ['ALL', 'React-JS', 'jquery', 'Html/Css', 'Wordpress'];
-const Projects = () => {
+
+const Projects = ({ projects }) => {
 	const [active, setActive] = useState('');
 
 	useEffect(() => {
@@ -18,10 +18,14 @@ const Projects = () => {
 		setActive(category);
 	};
 
-	const filterProjects = results.filter((project) => {
-		if (active === 'all') return results;
-		else return project.category.toLowerCase() === active;
-	});
+	const filterProjects =
+		projects &&
+		projects
+			.filter((project) => {
+				if (active === 'all') return projects;
+				else return project.category.toLowerCase() === active;
+			})
+			.map((p) => <Card key={p._id} image={p.image} project={p} />);
 
 	return (
 		<section>
@@ -31,11 +35,7 @@ const Projects = () => {
 				</SectionHeading>
 				<SectionPara>View some of my work here</SectionPara>
 				<Filters active={active} onFilter={handleFilter} category={category} />
-				<ProjectsWrapper>
-					{filterProjects.map((p) => (
-						<Card key={p._id} image={p.image} project={p} />
-					))}
-				</ProjectsWrapper>
+				<ProjectsWrapper>{filterProjects}</ProjectsWrapper>
 			</ProjectsContainer>
 		</section>
 	);
